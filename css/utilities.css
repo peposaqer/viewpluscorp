@@ -45,8 +45,8 @@
   font-size: 24px;
 }
 
-.footer .sahl .five {
-  margin-left: -32% !important;
+.sahl ul {
+  padding-left: 0px;
 }
 
 .footer textarea {
@@ -121,10 +121,10 @@
 
 .copy {
   background-color: #000;
-  /* position: relative; */
-  /* bottom: 0; */
   width: 100%;
   height: 35.5px;
+  display: flex;
+  align-items: center;
 }
 
 .copy p {
@@ -243,6 +243,16 @@ nav .x-mark {
   .footer .five {
     margin-left: -22%;
   }
+
+  /* nav ul {
+    text-align: center;
+    float: left;
+    margin-left: 30%;
+  }
+
+  nav .navbar-brand img {
+    margin-top: 0;
+  } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -423,7 +433,7 @@ nav .x-mark {
   }
 
   nav .navbar-brand img {
-    margin-left: -13%;
+    margin-left: -5%;
   }
 
   nav .spa {
