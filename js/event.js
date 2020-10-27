@@ -62,7 +62,7 @@ var galleryThumbs = new Swiper(".gallery-thumbs", {
   observeParents: true,
   observeSlideChildren: true,
   spaceBetween: 20,
-  slidesPerView: 12,
+  slidesPerView: 10,
   loop: true,
   freeMode: true,
   loopedSlides: 5, //looped slides should be the same
@@ -90,7 +90,8 @@ var galleryTop = new Swiper(".gallery-top", {
 $(document).ready(function () {
   $(".openModalBtn").on("click", function () {
     setTimeout(function () {
-      console.log("dskjbsdigs");
+      $(".modal").css('padding-right', '0px');
+      $(".modal").css('overflow', 'hidden');
       galleryThumbs.update();
       galleryTop.update();
     }, 500);
