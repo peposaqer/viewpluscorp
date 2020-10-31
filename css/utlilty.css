@@ -1,0 +1,446 @@
+nav {
+  width: 100%;
+  height: 75px;
+  z-index: 102;
+  background-color: transparent;
+  line-height: 60px;
+}
+
+nav .navbar-brand:hover {
+  border: 0;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+nav .navbar-brand img {
+  width: 125px;
+  height: 55px;
+}
+
+nav ul {
+  white-space: nowrap;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:not(:last-child) {
+    padding-right: 2rem;
+}
+
+nav a {
+  border: 0;
+}
+
+nav ul li a {
+  color: #999;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav a.active,
+nav a:hover {
+  color: #000;
+  transition: 0.5s;
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+nav .spa {
+  color: #000000;
+}
+
+nav .x-mark {
+  display: none;
+}
+
+/* end nav */
+
+/* start footer */
+
+.footer {
+    background-color: #222;
+    background-image: url(/img/footer-bg.png);
+    color: #FFF;
+    padding-top: 5rem;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer .viewplus img {
+    width: 125px;
+    height: 75px;
+    /* margin-top: 3rem; */
+}
+
+.footer .viewplus p {
+    color: #ACACAC;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer .follow h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.footer .follow ul li {
+    display: inline-block;
+}
+
+.footer .follow ul li a {
+    color: #AAA;
+}
+
+.footer .follow ul li:not(:first-child) {
+    padding-left: 1rem;
+}
+
+.footer .links a {
+    color: #ACACAC;
+    font-size: 16px;
+    text-decoration: none;
+} 
+
+.footer .links h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer .find h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer .find h5 {
+    font-size: 16px;
+    color: #009BDB;
+}
+
+.footer .find i {
+    padding-right: .5rem;
+    color: #009BDB;
+}
+
+.footer .find li {
+    color: #ACACAC;
+    font-size: 16px;
+}
+
+.footer .Instagram h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer .Instagram .instagram-1 {
+    height: 180px;
+    width: 100%;
+    background-color: #000;
+}
+
+.footer form input {
+    background-color: transparent;
+    border-radius: 3px;
+    /* padding: 1rem;    */
+    font-size: 18px;
+    color: #FFF;
+    margin-top: 1rem;
+    border: 1px solid #ACACAC;
+    width: 100%;
+}
+
+.footer form {
+    padding: 0;
+    max-width: 100%;
+}
+
+.footer form textarea {
+    background-color: transparent;
+    border-radius: 3px;
+    /* padding: 1rem;    */
+    font-size: 18px;
+    color: #FFF;
+    margin-top: 1rem;
+    border: 1px solid #ACACAC;
+    width: 100%;
+}
+
+.footer form .send {
+    background-color: #009BDB;
+    border: 0;
+    border-radius: 3px;
+    padding: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 14px;
+    margin-bottom: 2rem;
+    width: 60%;
+}
+
+.footer form h1 {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-top: 2rem;
+}
+ .copy {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+ .copy p {
+    margin: 0;
+    line-height: 40px;
+    font-size: 14px;
+    color: #FFF;
+}
+/* end footer */
+
+@media (max-width: 320px) {
+  .checkbtn {
+    display: block;
+    /* margin-right: 10%; */
+  }
+
+  nav a.active,
+  nav a:hover {
+    color: #fff;
+    /* transition: 0.5s; */
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  nav .navbar-brand img {
+    margin-top: 0;
+  }
+
+  nav .x-mark {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  nav .x-mark:hover {
+      border: 0;
+  }
+
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url(/img/menu-bg.svg);
+    background-size: contain;
+    /* top: 80px; */
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav .spa {
+      color: #fff;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a.active,
+  a:hover {
+    background: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+    top: 0;
+  }
+
+  .footer form .send {
+      width: 52%;
+  }
+
+  .footer .copy p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+  .checkbtn {
+    display: block;
+    /* margin-right: 10%; */
+  }
+
+  nav a.active,
+  nav a:hover {
+    color: #fff;
+    /* transition: 0.5s; */
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  nav .navbar-brand img {
+    margin-top: 0;
+  }
+
+  nav .x-mark {
+    margin-top: 2rem;
+    display: block;
+  }
+
+  
+  nav .x-mark:hover {
+      border: 0;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url(/img/menu-bg.svg);
+    background-size: contain;
+    /* top: 80px; */
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav .spa {
+      color: #fff;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a.active,
+  a:hover {
+    background: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+    top: 0;
+  }
+
+    .footer form .send {
+      width: 52%;
+  }
+
+  
+  .footer .copy p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .checkbtn {
+    display: block;
+    /* margin-right: 10%; */
+  }
+
+  nav a.active,
+  nav a:hover {
+    color: #fff;
+    /* transition: 0.5s; */
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  nav .navbar-brand img {
+    margin-top: 0;
+  }
+
+  nav .x-mark {
+    margin-top: 2rem;
+    display: block;
+  }
+
+  
+  nav .x-mark:hover {
+      border: 0;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url(/img/menu-bg.svg);
+    background-size: contain;
+    /* top: 80px; */
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav .spa {
+      color: #fff;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a.active,
+  a:hover {
+    background: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) {
+}

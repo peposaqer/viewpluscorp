@@ -1,48 +1,39 @@
-
-
-
 /* start event */
-
-.event h1 {
-  font-size: 40px;
-  font-weight: bold;
-  white-space: nowrap;
-}
-.event p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #4b4b4b;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .event {
   height: 100vh;
-  display: flex;
-}
-
-.test {
-  margin: auto;
-}
-
-.event .group {
-  display: -webkit-box;
-  margin-top: 25rem;
-}
-
-.smart-img-back {
-  width: 100%;
 }
 
 .smart-contener-img {
-  /* text-align: center; */
-  margin-top: 19%;
+  margin-top: 8rem;
 }
 
-.smart-img-front {
+.event .group {
+  margin-top: 21rem;
+}
+
+.event h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.event p {
+  color: #4b4b4b;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.event .smart-img-back {
+  width: 100%;
+}
+
+.event .smart-img-front {
   position: absolute;
-  left: 35%;
-  top: 0%;
-  height: 70%;
-  width: 55%;
+  width: 50%;
+  left: 12rem;
 }
 
 /* end event */
@@ -52,7 +43,7 @@
   border: none;
 }
 
-.apply2 {
+.tabs {
   background: url(/img/Careers.png);
   background-repeat: no-repeat;
   height: 100vh;
@@ -80,20 +71,19 @@
   background-color: transparent;
 }
 
-.apply2 h1 {
+.tabs h1 {
   font-size: 24px;
   font-weight: bold;
   margin-top: 3%;
 }
 
-.apply2 .openCvBtn {
+.tabs .openCvBtn {
   padding: 1%;
   color: #fff;
   text-decoration: none;
   background-color: #009bdb;
   float: right;
 }
-/*  */
 
 .pagination {
   margin-top: 4%;
@@ -118,8 +108,8 @@
 }
 /* end apply */
 
-/* satrt por */
-.por {
+/* satrt openmodel */
+.openmodel {
   height: 100%;
   position: fixed;
   top: 0;
@@ -127,43 +117,45 @@
   bottom: 0;
   z-index: 10005;
   width: 50%;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: #000;
+  padding-top: 0;
 }
 
-.por .ui {
+.openmodel .ui {
   background-color: #232323;
-  top: -14%;
   position: relative;
 }
 
-.por .close-aplay2 {
-  margin-top: -4%;
+.openmodel .close-aplay2 {
   margin-left: 3%;
 }
 
-.por .div {
+.openmodel .div {
   display: flex;
+  align-items: center;
 }
 
-.por .test2 span {
+.openmodel .test2 span {
   display: flex;
   margin-left: 9%;
   font-size: 20px;
   line-height: 2;
 }
 
-.por .h-1 {
-  margin-top: 1.5%;
+.openmodel .h-1 {
   margin-left: 0%;
 }
 
-.por .ui p {
+.openmodel .ui p {
   color: #ffffff;
   font-size: 16px;
   width: 80%;
   margin-left: 3%;
 }
 
-.por .ui h3 {
+.openmodel .ui h3 {
   color: #aba6a6;
   font-weight: bold;
   font-size: 24px;
@@ -171,23 +163,23 @@
   margin-top: 5%;
 }
 
-.por .opac {
+.openmodel .opac {
   background-color: #000;
   opacity: 0.2;
 }
 
-.por .apply2 {
+.openmodel .apply3 {
   background: #000;
   height: 100%;
 }
 
-.por h1 {
+.openmodel h1 {
   color: #fff;
-  margin-left: 10%;
+  margin-left: 4%;
   padding: 2%;
 }
 
-.por form input {
+.openmodel form input {
   width: 90%;
   margin-left: 5%;
   padding: 1%;
@@ -200,7 +192,7 @@
   color: #fff;
 }
 
-.por form textarea {
+.openmodel form textarea {
   background: transparent;
   padding: 1%;
   border: 1px solid #aaaaaa;
@@ -211,25 +203,26 @@
   color: #fff;
 }
 
-.por .one {
+.openmodel .one {
   color: #aba6a6;
   font-size: 16px;
 }
 
-.por .two {
+.openmodel .two {
   color: #fff;
   font-size: 16px;
 }
 
-.por form .send {
+.openmodel form .send {
   width: 25%;
   text-align: center;
   background-color: #009bdb;
   color: #fff;
   border: none;
+  margin-bottom: 5rem;
 }
 
-.por .cloud {
+.openmodel .cloud {
   text-align: center;
   border: dashed;
   width: 90%;
@@ -240,59 +233,58 @@
   justify-content: center;
 }
 
-.por form h3 {
+.openmodel form h3 {
   font-size: 16px;
   padding-left: 3%;
 }
 
-.por i {
+.openmodel i {
   color: #fff;
   z-index: 5555;
-  position: relative;
-  top: 75px;
   font-size: 24px;
   margin-left: 5%;
 }
 
-/* end por */
+/* end openmodel */
 
-/* start join */
+/* start jion */
 
 .jion {
   height: 100vh;
-  display: flex;
-}
-
-.jion .group img {
-  width: 80%;
-  padding-top: 15%;
-  height: 60%;
-}
-
-.jion .group {
-  justify-content: center;
-  display: -webkit-box;
+  margin-bottom: 5rem;
+  padding-top: 5rem;
 }
 
 .jion h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-top: 28rem;
 }
 
 .jion p {
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 2;
+  color: #4b4b4b;
+}
+
+.jion .group {
+  margin-top: 16rem;
 }
 
 .jion .openCvBtn {
   background-color: #009bdb;
-  color: #ffffff;
+  padding: 0.5rem;
+  font-size: 16px;
+  color: #fff;
   border-radius: 3px;
-  padding: 3%;
-  padding-left: 10%;
-  padding-right: 10%;
   text-decoration: none;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  text-align: center;
+}
+
+.jion img {
+  width: 70%;
+  height: 100%;
 }
 
 /* end jion */
@@ -319,7 +311,8 @@
 
 .cv h1 {
   color: #fff;
-  margin-left: 10%;
+  /* margin-left: 10%; */
+  font-size: 30px;
   padding: 2%;
 }
 
@@ -364,110 +357,212 @@
   padding: 2%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .cv form h3 {
-  font-size: 16px;
+  font-size: 14px;
   padding-left: 3%;
+  margin: 0;
 }
 
 .cv i {
   color: #fff;
   z-index: 5555;
-  position: relative;
-  top: 75px;
+  /* position: relative; */
+  /* top: 55px; */
   font-size: 24px;
-  margin-left: 5%;
+  /* margin-left: 5%; */
+}
+
+.cv .arrow {
+    margin-left: 5%;
 }
 
 /* end cv */
 
 /* start madia */
 
-@media only screen and (max-width: 320px) {
-
-  .event .group h1 {
-    font-size: 24px !important;
-    
-  }
-
-  .jion h1 {
-    /* font-size: 24px; */
-    white-space: nowrap;
-    margin-top: 17rem;
-  }
-
-  .jion .group img {
-    margin-left: -6rem !important;
-  }
-
+@media (max-width: 320px) {
+.event {
+height: 100%;
+}
+.revers {
+flex-flow: column-reverse;
 }
 
-@media only screen and (max-width: 375px) {
-  
-  .jion h1 {
-    /* font-size: 24px; */
-    white-space: nowrap;
-    margin-top: 2rem;
-  }
-
-
-  .jion .openCvBtn {
-    margin-bottom: 15rem;
-  }
-
+.event h1 {
+font-size: 1.6rem;
 }
 
-@media only screen and (max-width: 425px) {
-
-  .apply2 {
-    display: none;
-  }
-
-  .smart-contener-img {
-    margin-left: 0rem !important;
-    margin-top: 8rem;
-  }
-
-  .event .group h1 {
-    font-size: 30px;
-  }
-
-  .jion .group img {
-    width: 148%;
-    height: auto;
-  }
-
-    .jion h1 {
-    /* font-size: 24px; */
-    white-space: nowrap;
-    margin-top: 25rem;
-  }
-
+.event p {
+font-size: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
-    .revers {
-      display: flex;
-      flex-direction: column-reverse;
-    }
+.event .smart-contener-img {
+text-align: center;
+margin-top: 3rem;
+}
 
-  .smart-contener-img {
+.event .smart-img-back {
+width: 95%;
+}
+
+.event .smart-img-front {
+width: 50%;
+left: 8rem;
+}
+
+.event .group {
+margin-top: 0rem;
+}
+
+.tabs {
+display: none;
+}
+
+.jion img {
+    width: 55%;
     text-align: center;
-    justify-content: center;
-    display: flex;
-    margin-left: 11rem;
+    margin-left: 4rem;
+}
+
+.jion .group {
+    margin-top: 0rem;
+}
+
+
+  .cv {
+      width: 100%;
+  }
+
+  .cv form .send {
+      width: 45%;
+  }
+
+  .cv form h3 {
+      font-size: 12px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+  .event {
+    height: 100%;
+  }
+
+ .revers {
+    flex-flow: column-reverse;
+  }
+
+  .event .smart-contener-img {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .event .smart-img-back {
+    width: 85%;
+  }
+
+  .event h1 {
+    font-size: 2rem;
+  }
+
+  .event .smart-img-front {
+    width: 45%;
+    margin-left: 0rem;
   }
 
   .event .group {
-    margin-top: 3rem;
+    margin-top: 0rem;
   }
 
-  .jion .group img {
+  .tabs {
+    display: none;
+  }
+
+  
+  .jion img {
+      width: 55%;
+      text-align: center;
+      margin-left: 4rem;
+  }
+
+  .jion .group {
+      margin-top: 0rem;
+  }
+
+  .cv {
+      width: 100%;
+  }
+
+  
+  .cv form .send {
+      width: 45%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .event {
+    height: 100%;
+  }
+
+  .revers {
+    flex-flow: column-reverse;
+  }
+
+  .event .smart-contener-img {
     text-align: center;
-    margin-left: -9rem;
+    margin-top: 1rem;
   }
 
+  .event .smart-img-back {
+    width: 55%;
+  }
+
+  .event .smart-img-front {
+    width: 26%;
+    margin-left: 8rem;
+  }
+
+  .event .group {
+    margin-top: 0rem;
+  }
+
+  .tabs {
+    display: none;
+  }
+
+  .jion {
+      height: 100%;
+  }
+
+  .jion img {
+      width: 35%;
+      text-align: center;
+      margin-left: 12rem;
+  }
+
+  .jion .group {
+      margin-top: 0rem;
+  }
+
+  .cv h1 {
+    font-size: 32px;
+  }
+
+  .cv i {
+      top: 45px;
+  }
+  
+  .cv form .send {
+      width: 35%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) {
 }
 
 /* end madia */
