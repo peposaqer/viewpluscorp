@@ -1,0 +1,367 @@
+/* start event */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.event {
+  height: 100vh;
+}
+
+.smart-contener-img {
+  margin-top: 8rem;
+}
+
+.event .group {
+  margin-top: 21rem;
+}
+
+.event h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.event p {
+  color: #4b4b4b;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.event .smart-img-back {
+  width: 100%;
+}
+
+.event .smart-img-front {
+  position: absolute;
+  width: 50%;
+  left: 12rem;
+}
+
+/* end event */
+
+
+/* start Lobortis */
+
+.Lobortis {
+  height: 100vh;
+  margin-top: 10%;
+  background: url(/img/background@2x.png);
+}
+
+.Lobortis img {
+  width: 240px;
+  height: 240px;
+  margin-bottom: 15%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.Lobortis h1 {
+  color: #000;
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.Lobortis span {
+  color: #acacac;
+  font-size: 12px;
+  position: relative;
+  bottom: 5px;
+}
+
+.Lobortis p {
+  font-size: 12px;
+  color: #4b4b4b;
+  margin-bottom: 2%;
+  line-height: 2;
+}
+
+.Lobortis .btn {
+  width: 80%;
+  padding: 5%;
+  margin-top: 5%;
+  text-align: center;
+  color: #fff;
+  background-color: #009bdb;
+}
+
+
+.pagination {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.pagination .pav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.pagination a {
+  color: #232323;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  font-size: 16px;
+}
+
+.pagination a.active {
+  background-color: #000;
+  color: white;
+  border-radius: 50%;
+}
+
+.pagination a:hover:not(.active) {
+  border-radius: 50%;
+}
+
+/* end Lobortis */
+
+/* start slider */
+
+.swiper-container {
+  width: 100vw;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-top {
+  height: 74vh;
+  width: 70vw;
+}
+
+.gallery-thumbs {
+  height: 25vh;
+  box-sizing: border-box;
+  padding: 10px 0;
+  background-color: #232323;
+}
+
+.gallery-thumbs .swiper-slide {
+  height: 20vh;
+  opacity: 0.4;
+  width: 80vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.closeModalBtn {
+  position: absolute;
+  right: 1%;
+  height: 6%;
+  width: 5%;
+  top: 1%;
+  z-index: 200;
+}
+
+
+/* start madia */
+
+@media (max-width: 320px) {
+.event {
+height: 100%;
+}
+.revers {
+flex-flow: column-reverse;
+}
+
+.event h1 {
+font-size: 1.6rem;
+}
+
+.event p {
+font-size: 1rem;
+}
+
+.event .smart-contener-img {
+text-align: center;
+margin-top: 4rem;
+}
+
+.event .smart-img-back {
+width: 95%;
+}
+
+.event .smart-img-front {
+width: 50%;
+left: 8rem;
+}
+
+.event .group {
+margin-top: 0rem;
+}
+.Lobortis {
+    height: 100%;
+}
+
+.Lobortis img {
+    width: 150px;
+    background-size: contain;
+}
+
+.Lobortis h1 {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+
+.Lobortis span {
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.Lobortis .btn {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.pagination .pop {
+    display: none;
+}
+
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+  .event {
+    height: 100%;
+  }
+
+ .revers {
+    flex-flow: column-reverse;
+  }
+
+  .event .smart-contener-img {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .event .smart-img-back {
+    width: 85%;
+  }
+
+  .event h1 {
+    font-size: 2rem;
+  }
+
+  .event .smart-img-front {
+    width: 45%;
+    margin-left: 0rem;
+  }
+
+  .event .group {
+    margin-top: 0rem;
+  }
+
+  
+.Lobortis {
+    height: 100%;
+}
+
+.Lobortis img {
+    width: 180px;
+    background-size: contain;
+}
+
+.Lobortis h1 {
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+
+.Lobortis span {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.Lobortis .btn {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.pagination {
+    margin-bottom: 5rem;
+}
+
+.pagination .pop {
+    display: none;
+}
+
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .event {
+    height: 100%;
+  }
+
+  .revers {
+    flex-flow: column-reverse;
+  }
+
+  .event .smart-contener-img {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .event .smart-img-back {
+    width: 55%;
+  }
+
+  .event .smart-img-front {
+    width: 26%;
+    margin-left: 8rem;
+  }
+
+  .event .group {
+    margin-top: 0rem;
+  }
+
+ .Lobortis img {
+     width: 165px;
+ }
+ .Lobortis .btn {
+     margin-bottom: 2rem;
+ }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+ .Lobortis img {
+     width: 220px;
+ }
+ .Lobortis .btn {
+     margin-bottom: 2rem;
+ }
+
+ .Lobortis h1 {
+     font-size: 20px;
+ }
+  
+}
+
+@media (min-width: 1025px) {
+    
+  .Lobortis img {
+    width: 270px;
+  }
+
+}
+
+
+/* end madia */
