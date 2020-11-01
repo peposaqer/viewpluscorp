@@ -1,0 +1,431 @@
+/* start swiper */
+
+.slider {
+    height: 100vh;
+}
+
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-top {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+}
+
+.gallery-thumbs {
+  height: 45%;
+  box-sizing: border-box;
+  margin-left: 30%;
+  max-width: 60%;
+  background-color: transparent;
+  position: absolute;
+  top: 60vh;
+  padding: 4.5%;
+  display: flex;
+}
+
+.gallery-thumbs .swiper-slide {
+  height: 70%;
+  width: 20%;
+  opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.pepole h1 {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: start;
+  margin-top: 25%;
+}
+
+.pepole span {
+  color: #a8a8a8;
+  font-size: 14px;
+}
+
+.pepole p {
+  color: #4b4b4b;
+  font-size: 18px;
+  line-height: 2;
+  width: 80%;
+}
+
+.pepole ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.swiper-slide .person {
+  opacity: 1;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  margin-left: 25%;
+    height: 100vh;
+}
+
+.pepole ul li {
+  padding: 1%;
+}
+
+/* end swiper */
+
+
+/* start jion */
+
+.jion {
+  height: 100vh;
+  margin-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.jion h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.jion p {
+  font-size: 1rem;
+  line-height: 2;
+  color: #4b4b4b;
+}
+
+.jion .group {
+  margin-top: 16rem;
+}
+
+.jion .openCvBtn {
+  background-color: #009bdb;
+  padding: 0.5rem;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  text-align: center;
+}
+
+.jion img {
+  width: 70%;
+  height: 100%;
+}
+
+/* end jion */
+
+/* satrt cv */
+.cv {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2002;
+  width: 50%;
+}
+
+.cv .opac {
+  background-color: #000;
+  opacity: 0.2;
+}
+
+.cv .apply {
+  background: #000;
+  height: 100%;
+}
+
+.cv h1 {
+  color: #fff;
+  font-size: 30px;
+  padding: 2%;
+}
+
+.cv form input {
+  width: 90%;
+  margin-left: 5%;
+  padding: 1%;
+  margin-top: 2%;
+  font-size: 15px;
+  color: #aaaaaa;
+  background-color: transparent;
+  border: 1px solid#AAAAAA;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.cv form textarea {
+  background: transparent;
+  padding: 1%;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-left: 5%;
+  width: 90%;
+  color: #fff;
+}
+
+.cv form .send {
+  width: 25%;
+  text-align: center;
+  background-color: #009bdb;
+  color: #fff;
+  border: none;
+}
+
+.cv .cloud {
+  text-align: center;
+  border: dashed;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv form h3 {
+  font-size: 14px;
+  padding-left: 3%;
+  margin: 0;
+}
+
+.cv i {
+  color: #fff;
+  z-index: 5555;
+  font-size: 24px;
+}
+
+.cv .arrow {
+    margin-left: 5%;
+}
+
+
+
+/* end cv */
+
+/* start madia */
+
+@media (max-width: 320px) {
+
+.revers {
+flex-flow: column-reverse;
+}
+
+.jion img {
+    width: 55%;
+    text-align: center;
+    margin-left: 4rem;
+}
+
+.jion .group {
+    margin-top: 0rem;
+}
+
+.footer {
+    height: 100%;
+}
+
+  .cv {
+      width: 100%;
+  }
+
+  .cv form .send {
+      width: 45%;
+  }
+
+  .cv form h3 {
+      font-size: 12px;
+  }
+  
+  
+  .slider {
+      margin-top: 3rem;
+      height: 100vh;
+  }
+
+  .swiper-slide .person {
+      height: 40vh;
+  }
+
+  .pepole h1 {
+      margin-top: 0;
+      margin-left: 1rem;
+      font-size: 24px;
+  }
+
+  .pepole span {
+      margin-top: 0;
+      margin-left: 1rem;
+  }
+
+  .pepole p {
+      margin-top: 0;
+      margin-left: 1rem;
+      font-size: 13px;
+      line-height: 1.7;
+  }
+
+  .pepole ul {
+      margin-top: 0;
+      margin-left: 1rem;
+      padding: 0;
+  }
+
+  .gallery-thumbs {
+      height: 25%;
+      margin-top: 50%;
+      text-align: center;
+      margin-left: 0% !important;
+      max-width: 100% !important;
+  }
+
+
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+.revers {
+flex-flow: column-reverse;
+}
+  
+  .jion img {
+      width: 55%;
+      text-align: center;
+      margin-left: 4rem;
+  }
+
+  .jion .group {
+      margin-top: 0rem;
+  }
+
+  .cv {
+      width: 100%;
+  }
+
+  
+  .cv form .send {
+      width: 45%;
+  }
+
+  
+  .slider {
+      margin-top: 3rem;
+      height: 100vh;
+  }
+
+  .swiper-slide .person {
+      height: 40vh;
+  }
+
+  .pepole h1 {
+      margin-top: 0;
+      margin-left: 1rem;
+      font-size: 24px;
+  }
+
+  .pepole span {
+      margin-top: 0;
+      margin-left: 1rem;
+  }
+
+  .pepole p {
+      margin-top: 0;
+      margin-left: 1rem;
+      font-size: 13px;
+      line-height: 1.7;
+  }
+
+  .pepole ul {
+      margin-top: 0;
+  }
+
+  .gallery-thumbs {
+      height: 25%;
+      margin-top: 35%;
+      text-align: center;
+      margin-left: 0% !important;
+      max-width: 100% !important;
+  }
+
+  .footer {
+    height: 100%;
+}
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+.revers {
+flex-flow: column-reverse;
+}
+  .jion {
+      height: 100%;
+  }
+
+  .jion img {
+      width: 35%;
+      text-align: center;
+      margin-left: 12rem;
+  }
+
+  .jion .group {
+      margin-top: 0rem;
+  }
+
+  .cv h1 {
+    font-size: 32px;
+  }
+
+  .cv i {
+      top: 45px;
+  }
+  
+  .cv form .send {
+      width: 35%;
+  }
+
+  
+    .slider {
+        height: 100vh;
+    }
+
+
+    .pepole p {
+        font-size: 14px;
+    }
+
+    .pepole ul {
+        padding: 0;
+        margin-left: 0rem;
+    }
+
+    .gallery-thumbs {
+        max-width: 40%;
+        margin-left: 50%;
+    }
+
+    .footer {
+    height: 100%;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) {
+}
+
+/* end madia */
