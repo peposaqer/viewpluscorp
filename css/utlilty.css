@@ -78,6 +78,10 @@ nav .x-mark {
     background-image: url(/img/footer-bg.png);
     color: #FFF;
     padding-top: 5rem;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 
 .footer ul {
@@ -283,6 +287,10 @@ nav .x-mark {
     top: 0;
   }
 
+  .footer {
+    height: 100%;
+  }
+
   .footer form .send {
       width: 52%;
   }
@@ -363,7 +371,9 @@ nav .x-mark {
     .footer form .send {
       width: 52%;
   }
-
+  .footer {
+    height: 100%;
+  }
   
   .footer .copy p {
     line-height: 20px;
@@ -436,6 +446,13 @@ nav .x-mark {
   #check:checked ~ ul {
     left: 0;
     top: 0;
+  }
+  .footer {
+    height: 100%;
+  }
+
+  .footer .display {
+    display: flex;
   }
 }
 
