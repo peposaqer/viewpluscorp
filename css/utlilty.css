@@ -217,6 +217,14 @@ nav .x-mark {
     font-size: 14px;
     color: #FFF;
 }
+
+.Instagram {
+  max-width: 100%;
+}
+
+.contact {
+  max-width: 100%;
+}
 /* end footer */
 
 @media (max-width: 320px) {
@@ -258,6 +266,20 @@ nav .x-mark {
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+  }
+
+  nav ul {
+    display: flex !important;
+    flex-flow: column;
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+
+  nav ul li:last-child {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
   }
 
   nav .spa {
@@ -325,7 +347,21 @@ nav .x-mark {
     display: block;
   }
 
-  
+    nav ul {
+    display: flex !important;
+    flex-flow: column;
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+
+  nav ul li:last-child {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+  }
+
+
   nav .x-mark:hover {
       border: 0;
   }
@@ -419,6 +455,20 @@ nav .x-mark {
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+  }
+
+    nav ul {
+    display: flex !important;
+    flex-flow: column;
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+
+  nav ul li:last-child {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
   }
 
   nav .spa {

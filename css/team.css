@@ -352,6 +352,7 @@ flex-flow: column-reverse;
 
   .pepole ul {
       margin-top: 0;
+      margin-left: 1rem;
   }
 
   .gallery-thumbs {
