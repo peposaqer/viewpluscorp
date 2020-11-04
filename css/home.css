@@ -34,7 +34,7 @@ a {
 .hero-img .showmore {
   color: #009bdb;
   border-bottom: 1px solid #009bdb;
-  z-index: 1000;
+  z-index: 100;
   align-self: center;
   margin-bottom: 2rem;
 }
@@ -503,6 +503,28 @@ a {
 @media (max-width: 320px) {
  .revers {
     flex-flow: column-reverse;
+  }
+
+  .smart {
+    height: 100%;
+  }
+  .Evaluation {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .Veyolo {
+    height: 100%;
+    padding-bottom: 5rem;
+  }
+
+  .inon {
+    height: 100%;
+  }
+
+  .Partners {
+    height: 100%;
+    padding-bottom: 2rem;
   }
 
   .side--menu {
