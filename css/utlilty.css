@@ -4,6 +4,7 @@ nav {
   z-index: 102;
   background-color: transparent;
   line-height: 60px;
+  position: absolute;
 }
 
 nav .navbar-brand:hover {
