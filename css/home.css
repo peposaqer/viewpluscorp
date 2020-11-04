@@ -11,7 +11,7 @@ body {
 /* start header */
 .hero-img {
   width: 100%;
-  background: url(/img/58.jpeg) no-repeat 50% 50%;
+  background: url('../img/58.jpeg') no-repeat 50% 50%;
   height: 100vh;
   background-size: cover;
   display: flex;
@@ -40,7 +40,7 @@ a {
 }
 
 .parallax {
-  background: url(/img/Path20969.png) no-repeat 50% 50%;
+  background: url('../img/Path20969.png') no-repeat 50% 50%;
   background-size: contain;
   position: absolute;
   width: 100%;
@@ -102,7 +102,7 @@ a {
 
 .smart {
   height: 100vh;
-  background: url(/img/background.png);
+  background: url('../img/background.png');
 }
 
 .smart-img-back {
@@ -179,15 +179,15 @@ a {
 .Evaluation {
   height: 100vh;
   overflow: hidden;
-  background: url(/img/background.png);
+  background: url('../img/background.png');
 }
 
 .Evaluation .evaluatuin-img-tab1 {
   width: auto;
-  height: 70%;
-  transform: rotate(30deg);
-  margin-left: 9rem;
-  margin-top: 15rem;
+  height: 75%;
+  transform: rotate(20deg);
+  margin-left: 0rem;
+  margin-top: 20rem;
 }
 
 .Evaluation .tab {
@@ -312,7 +312,7 @@ a {
 /* start inon */
 
 .inon {
-  background: url(/img/Inon-pic@2x.png);
+  background: url('../img/Inon-pic@2x.png');
   height: 100vh;
   background-size: cover;
   color: #fff;
@@ -358,7 +358,7 @@ a {
 
 .Partners {
   height: 100vh;
-  background: url(/img/background.png);
+  background: url('../img/background.png');
 }
 
 .Partners .porta {
@@ -669,6 +669,25 @@ a {
     flex-flow: column-reverse;
   }
 
+  .smart {
+    height: 100%;
+  }
+
+  .Evaluation {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+  .Veyolo {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+  .inon {
+    height: 100%;
+  }
+  .Partners {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
   .side--menu {
     transform: rotate(-180deg);
     height: 100%;
@@ -795,6 +814,26 @@ a {
 @media (min-width: 426px) and (max-width: 768px) {
   .revers {
     flex-flow: column-reverse;
+  }
+
+    .smart {
+    height: 100%;
+  }
+
+  .Evaluation {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+  .Veyolo {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+  .inon {
+    height: 100%;
+  }
+  .Partners {
+    height: 100%;
+    padding-bottom: 2rem;
   }
 
   .side--menu {

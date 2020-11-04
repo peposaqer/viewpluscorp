@@ -44,7 +44,7 @@ body {
 }
 
 .tabs {
-  background: url(/img/Careers.png);
+  background: url('../img/Careers.png');
   background-repeat: no-repeat;
   height: 100vh;
   padding-top: 12%;
