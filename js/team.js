@@ -31,8 +31,25 @@ $(".apply a").on("click", function () {
     loopedSlides: 4, //looped slides should be the same
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    // width: 160,
+    width: 160,
     slidesPerView: "auto",
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
   });
   var galleryTop = new Swiper(".gallery-top", {
     spaceBetween: 10,
@@ -45,6 +62,7 @@ $(".apply a").on("click", function () {
     thumbs: {
       swiper: galleryThumbs,
     },
+    
   });
 
 
