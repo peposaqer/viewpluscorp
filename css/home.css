@@ -1,3 +1,8 @@
+/* .right-dir{
+  direction: rtl;
+} */
+
+
 html,
 body {
   margin: 0;
@@ -173,6 +178,47 @@ a {
 }
 
 /* end smart */
+
+
+/* start read more */
+
+.hidden {
+  display: none;
+}
+
+.read .ead {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  transition: all 9s ease;
+  animation-name: ex;
+  animation-duration: 9s;
+}
+
+
+.read img {
+  width: 100%;
+}
+
+.read p {
+  font-size: 14px;
+}
+
+.read h1 {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.read .less {
+  line-height: 3;
+  color: #009bdb;
+  border-bottom: 1px solid #009bdb;
+  text-decoration: none;
+}
+
+/* end read more */
+
 
 /* start Evaluation */
 
@@ -839,6 +885,7 @@ a {
   .side--menu {
     transform: rotate(-180deg);
     height: 100%;
+    width: 100%;
   }
 
   .side--menu ul li {

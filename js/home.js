@@ -130,3 +130,17 @@ document.onscroll = function () {
     $("#inon-nav").css("visibility", "collapse");
   }
 };
+
+
+
+//show hidden
+
+$(".showmore").click(function () {
+  $(".read").removeClass("hidden").fadeIn();
+});
+
+//show hidden
+
+$(".less").click(function () {
+  $(".read").addClass("hidden").fadeIn();
+});
