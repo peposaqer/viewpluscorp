@@ -55,7 +55,7 @@ a {
 
 /* start scond nav */
 
-#side-menu {
+.side-menu-section {
   margin: 0;
   padding: 0;
   display: flex;
@@ -539,7 +539,7 @@ a {
     font-size: 11px;
   }
 
-  #side-menu {
+  .side-menu-section {
     flex-flow: row;
     justify-content: center;
   }
@@ -697,7 +697,7 @@ a {
     transform: rotate(180deg);
   }
 
-  #side-menu {
+  .side-menu-section {
     flex-flow: row;
     justify-content: center;
   }
@@ -847,7 +847,7 @@ a {
 
 
 
-  #side-menu {
+  .side-menu-section {
     flex-flow: row;
     justify-content: center;
   }
