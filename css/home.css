@@ -155,7 +155,7 @@ a {
 
 .smart .group p {
   color: #4b4b4b;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.8;
   margin-bottom: 3rem;
 }
@@ -266,7 +266,7 @@ a {
 
 .Evaluation p {
   color: #4b4b4b;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.8;
   margin-bottom: 3rem;
 }
@@ -337,7 +337,7 @@ a {
 }
 
 .Veyolo p {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .Veyolo h1 {
@@ -377,7 +377,7 @@ a {
 }
 
 .inon p {
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.8;
   width: 70%;
 }
@@ -1061,7 +1061,7 @@ a {
 
   .Evaluation .evaluatuin-img-tab1 {
     width: auto;
-    height: 47%;
+    height: 70%;
     margin-left: 0rem;
     margin-top: 17rem;
   }
@@ -1131,7 +1131,7 @@ a {
   }
 
   .Evaluation .evaluatuin-img-tab1 {
-    height: 50%;
+    height: 70%;
   }
 
   .Veyolo .group {
