@@ -89,6 +89,10 @@ $(document).ready(function () {
   });
 });
 
+  $(window).bind("load", function () {
+    $("#work-in-progress").fadeOut(100);
+  });
+
 // Change Languages
 var language;
 // check langauge on loading page

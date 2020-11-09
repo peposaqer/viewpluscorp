@@ -33,6 +33,10 @@ $(".customer-logos").slick({
   ],
 });
 
+  $(window).bind("load", function () {
+    $("#work-in-progress").fadeOut(100);
+  });
+
 // Animation on Scroll
 $(document).ready(function () {
   AOS.init({

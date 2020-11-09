@@ -100,6 +100,9 @@ var galleryTop = new Swiper(".gallery-top", {
   initialSlide: 1,
 });
 
+  $(window).bind("load", function () {
+    $("#work-in-progress").fadeOut(100);
+  });
 
 // Change Languages
 var language;
