@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/utlilty.css" />
     <link rel="stylesheet" href="css/event.css" />
 </head>
-<body>
+<body onload="loadLang()">
     <!-- start nav -->
     <nav class="">
       <div class="container">
@@ -132,15 +132,15 @@
                 style="width: 55px; height: 55px"
             /></a>
           </li>
-          <li><a href="home.html">Home </a></li>
-          <li><a class="active" href="event.html">event</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="career.html">Career</a></li>
+          <li><a href="home.html" id="home">Home </a></li>
+          <li><a class="active" href="event.html" id="Event">event</a></li>
+          <li><a href="team.html" id="team">Team</a></li>
+          <li><a href="career.html" id="Career">Career</a></li>
           <li>
             <div class="di">
-              <a href="" class="en">En</a>
+              <a href="#" class="en" onclick="setLanguage('en')">En</a>
               <span class="spa">|</span>
-              <a href="" class="en">العربيه</a>
+              <a href="#" class="arbic" onclick="setLanguage('ar')">العربيه</a>
             </div>
           </li>
         </ul>
@@ -148,43 +148,43 @@
     </nav>
     <!-- end nav -->
     <!-- start event -->
-    <div class="event">
-      <div class="container">
-        <div class="row revers">
-          <div class="col-lg-6 col-md-12">
-            <div class="group">
-              <h1>We have a seat for you</h1>
-              <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog.</p>
+    <div class="chang event">
+      <div class="chang container">
+        <div class="chang row revers">
+          <div class="chang col-lg-6 col-md-12">
+            <div class="chang group">
+              <h1 id="event_event_title">We have a seat for you</h1>
+              <p id="event_event_dircation">We don't remeber the days, but rather the moments, When our ideas came out to life!</p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 smart-contener-img">
-            <img src="img/events-bg.svg" class="smart-img-back" data-aos="fade-up-left">
-            <img src="img/event.png" class="smart-img-front" data-aos="fade-down-left">
+          <div class="chang col-lg-6 col-md-12 smart-contener-img">
+            <img src="img/events-bg.svg" class="chang smart-img-back" data-aos="fade-up-left">
+            <img src="img/event.png" class="chang smart-img-front" data-aos="fade-down-left">
           </div>
         </div>
       </div>
     </div>
     <!-- end event -->
     <!-- start Lobortis -->
-    <div class="Lobortis">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6 col-md-6 col-sm-12">
-              <div class="row">
-                <div class="col-6">
+    <div class=" Lobortis">
+        <div class=" container">
+          <div class="chang row">
+            <div class="chang col-xl-6 col-md-6 col-sm-12">
+              <div class="chang row">
+                <div class="chang col-6">
                   <img src="img/15.png"  data-aos="zoom-in"/>
                 </div>
-                <div class="col-6">
-                  <h1 class="bot">Lobortis est viverra</h1>
-                  <span>Romania, Hanoi &nbsp; 03/12/2001</span>
-                  <p>
+                <div class="chang col-6">
+                  <h1 class="chang bot" id="event_Lobortis_title">Lobortis est viverra</h1>
+                  <span id="event_Lobortis_span">Romania, Hanoi &nbsp; 03/12/2001</span>
+                  <p id="event_Lobortis_dircation">
                     Fusce at nisi eget dolor rhoncus facilisis. Mauris ante
                     nisl, consectetur et luctus et, porta ut dolor. Curabitur
                     ultricies ultrices nulla.
                   </p>
                   <button
                     type="button"
-                    class="btn btn-primary openModalBtn"
+                    class="chang btn btn-primary openModalBtn"
                     data-toggle="modal"
                     data-target="#exampleModal"
                     id="openModal"
@@ -194,22 +194,22 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-md-6 col-sm-12">
-              <div class="row">
-                <div class="col-6">
+            <div class="chang col-xl-6 col-md-6 col-sm-12">
+              <div class="chang row">
+                <div class="chang col-6">
                   <img src="img/16.png"  data-aos="zoom-in"/>
                 </div>
-                <div class="col-6">
-                  <h1>Lobortis est viverra</h1>
-                  <span>Romania, Hanoi &nbsp; 03/12/2001</span>
-                  <p>
+                <div class="chang col-6">
+                  <h1 id="event_Lobortis_title">Lobortis est viverra</h1>
+                  <span id="event_Lobortis_span">Romania, Hanoi &nbsp; 03/12/2001</span>
+                  <p id="event_Lobortis_dircation">
                     Fusce at nisi eget dolor rhoncus facilisis. Mauris ante
                     nisl, consectetur et luctus et, porta ut dolor. Curabitur
                     ultricies ultrices nulla.
                   </p>
                   <button
                     type="button"
-                    class="btn btn-primary openModalBtn"
+                    class="chang btn btn-primary openModalBtn"
                     data-toggle="modal"
                     data-target="#exampleModal"
                     id="openModal"
@@ -220,23 +220,23 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-6 col-md-6 col-sm-12">
-              <div class="row">
-                <div class="col-6">
+          <div class="chang row">
+            <div class="chang col-xl-6 col-md-6 col-sm-12">
+              <div class="chang row">
+                <div class="chang col-6">
                   <img src="img/17.png"  data-aos="zoom-in"/>
                 </div>
-                <div class="col-6">
-                  <h1>Lobortis est viverra</h1>
-                  <span>Romania, Hanoi &nbsp; 03/12/2001</span>
-                  <p>
+                <div class="chang col-6">
+                  <h1 id="event_Lobortis_title">Lobortis est viverra</h1>
+                  <span id="event_Lobortis_span">Romania, Hanoi &nbsp; 03/12/2001</span>
+                  <p id="event_Lobortis_dircation">
                     Fusce at nisi eget dolor rhoncus facilisis. Mauris ante
                     nisl, consectetur et luctus et, porta ut dolor. Curabitur
                     ultricies ultrices nulla.
                   </p>
                   <button
                     type="button"
-                    class="btn btn-primary openModalBtn"
+                    class="chang btn btn-primary openModalBtn"
                     data-toggle="modal"
                     data-target="#exampleModal"
                     id="openModal"
@@ -246,22 +246,22 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-md-6 col-sm-12">
-              <div class="row">
-                <div class="col-6">
+            <div class="chang col-xl-6 col-md-6 col-sm-12">
+              <div class="chang row">
+                <div class="chang col-6">
                   <img src="img/18.png"  data-aos="zoom-in"/>
                 </div>
-                <div class="col-6">
-                  <h1>Lobortis est viverra</h1>
-                  <span>Romania, Hanoi &nbsp; 03/12/2001</span>
-                  <p>
+                <div class="chang col-6">
+                  <h1 id="event_Lobortis_title">Lobortis est viverra</h1>
+                  <span id="event_Lobortis_span">Romania, Hanoi &nbsp; 03/12/2001</span>
+                  <p id="event_Lobortis_dircation">
                     Fusce at nisi eget dolor rhoncus facilisis. Mauris ante
                     nisl, consectetur et luctus et, porta ut dolor. Curabitur
                     ultricies ultrices nulla.
                   </p>
                   <button
                     type="button"
-                    class="btn btn-primary openModalBtn"
+                    class="chang btn btn-primary openModalBtn"
                     data-toggle="modal"
                     data-target="#exampleModal"
                     id="openModal"
@@ -272,139 +272,183 @@
               </div>
             </div>
           </div>
-          <div class="pagination">
-            <div class="pav">
-              <a href="#!"><i class="fa fa-arrow-left"></i></a>
-              <a href="#!" class="active">1</a>
+          <div class=" pagination">
+            <div class=" pav">
+              <a href="#!"><i class=" fa fa-arrow-left"></i></a>
+              <a href="#!" class=" active">1</a>
               <a href="#!">2</a>
               <a href="#!">3</a>
-              <a href="#!" class="pop">4</a>
-              <a href="#!" class="pop">5</a>
-              <a href="#!" class="pop">6</a>
+              <a href="#!" class=" pop">4</a>
+              <a href="#!" class=" pop">5</a>
+              <a href="#!" class=" pop">6</a>
               <a href="#!">...</a>
               <a href="#!">20</a>
-              <a href="#!"><i class="fa fa-arrow-right"></i></a>
+              <a href="#!"><i class=" fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
     </div>
     <!-- end Lobortis -->
     <!-- start footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="viewplus">
-                        <img src="img/logo-white.png" alt="">
-                        <p>Back in 2012 we had a vision, we had a dream of making the world a better place and give the world the exact solutions it needs so we put the first brick in view plus to make that vision clear and to fulfill that dream, view plus isn’t a company and not intend to be a one, view plus is simply a solution, and a smart one!</p>
-                    </div>
-                    <div class="follow">
-                        <h1>Follow Us</h1>
-                        <ul class="soical">
-                            <li>
-                                <a href="#!"><i class="fab fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-youtube"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-snapchat"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="links">
-                    <div class="row">
-                      <div class="col-6">
-                        <h1>Products</h1>
-                        <ul>
-                          <li><a href="#!">Smart Ads</a></li>
-                          <li><a href="#!">Evaluation</a></li>
-                          <li><a href="#!">Veyolo</a></li>
-                          <li><a href="#!">Inon</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-6">
-                        <h1>Sitemap</h1>
-                        <ul>
-                          <li><a href="home.html">Home</a></li>
-                          <li><a href="#">Event</a></li>
-                          <li><a href="team.html">Team</a></li>
-                          <li><a href="career.html">Career</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="find">
-                    <h1>Find Us</h1>
-                    <div>
-                      <h5>Riyadh Branch</h5>
-                      <ul>
-                        <li><i class="fa fa-map-marker color"></i>644 Haley Harbors, Corkeryview, HI, AE</li>
-                        <li><i class="fa fa-phone color"></i>(169)904-8990</li>
-                        <li><i class="fa fa-envelope color"></i>(169)904-8990</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h5>Jaddah Branch</h5>
-                      <ul>
-                        <li><i class="fa fa-map-marker color"></i>15047 Oswaldo Lights, East Eleonore, IN, LS</li>
-                        <li><i class="fa fa-phone color"></i>(169)904-8990</li>
-                        <li><i class="fa fa-envelope color"></i>(169)904-8990</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h5>Egypt Branch</h5>
-                      <ul>
-                        <li><i class="fa fa-map-marker color"></i>20952 Jerome Keys, New Sarinabury, MA, HN</li>
-                        <li><i class="fa fa-phone color"></i>(169)904-8990</li>
-                        <li><i class="fa fa-envelope color"></i>(169)904-8990</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 display">
-                  <div class="Instagram col-md-6">
-                    <h1>Instagram</h1>
-                    <div class="instagram-1"></div>
-                  </div>
-                  <div class="contact col-md-6">
-                    <form method="GET" class="col-xl-4 col-md-4 col-sm-12">
-                      <h1>Contact us</h1>
-                      <input type="text" name="name" placeholder=" Name" required />
-                      <input type="tel" name="Phone" placeholder=" Phone" required />
-                      <input type="email" name="email" placeholder=" Email" required/>
-                      <textarea rows="5" placeholder="message"></textarea>
-                      <input class="send" type="submit" value="send Message" />
-                    </form>
-                  </div>
-                </div>
+    <div class="chang footer">
+      <div class="chang container">
+        <div class="chang row">
+          <div class="chang col-lg-4 col-md-6 col-sm-12">
+            <div class="chang viewplus">
+              <img src="img/logo-white.png" alt="" />
+              <p id="footer_dircation">
+                Back in 2012 we had a vision, we had a dream of making the world
+                a better place and give the world the exact solutions it needs
+                so we put the first brick in view plus to make that vision clear
+                and to fulfill that dream, view plus isn’t a company and not
+                intend to be a one, view plus is simply a solution, and a smart
+                one!
+              </p>
             </div>
-        </div>
-        <div class="copy">
-              <div class="container">
-                <div class="row">
-                  <div class="col-6"><p>Privacy & Policy&nbsp; |&nbsp; Terms & Conditions</p></div>
-                  <div class="col-6"><p style="text-align: end;">Copyright ©2019 All rights reserved</p></div>
+            <div class="chang follow">
+              <h1 id="footer_follow_us">Follow Us</h1>
+              <ul class="chang soical">
+                <li>
+                  <a href="#!"><i class="chang fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="chang fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="chang fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="chang fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="chang fab fa-snapchat"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="chang col-lg-4 col-md-6 col-sm-12">
+            <div class="chang links">
+              <div class="chang row">
+                <div class="chang col-6">
+                  <h1 id="footer_product">Products</h1>
+                  <ul>
+                    <li><a href="#!">Smart Ads</a></li>
+                    <li><a href="#!">Evaluation</a></li>
+                    <li><a href="#!">Veyolo</a></li>
+                    <li><a href="#!">Inon</a></li>
+                  </ul>
+                </div>
+                <div class="chang col-6">
+                  <h1 id="footer_Sitemap">Sitemap</h1>
+                  <ul>
+                    <li><a href="home.html" id="home1">Home</a></li>
+                    <li><a href="#" id="Event1">Event</a></li>
+                    <li><a href="team.html" id="team1">Team</a></li>
+                    <li><a href="career.html" id="career1">Career</a></li>
+                  </ul>
                 </div>
               </div>
+            </div>
+            <div class="chang find">
+              <h1 id="footer_find">Find Us</h1>
+              <div>
+                <h5 id="footer_find_riyadh">Riyadh Branch</h5>
+                <ul>
+                  <li>
+                    <i class="chang fa fa-map-marker color" id="footer_find_riyadh_title"></i>644 Haley
+                    Harbors, Corkeryview, HI, AE
+                  </li>
+                  <li>
+                    <i class="chang fa fa-phone color"></i>(169)904-8990
+                  </li>
+                  <li>
+                    <i class="chang fa fa-envelope color"></i>(169)904-8990
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h5 id="footer_find_Jaddah">Jaddah Branch</h5>
+                <ul>
+                  <li>
+                    <i class="chang fa fa-map-marker color" id="footer_find_Jaddah_title"></i>15047
+                    Oswaldo Lights, East Eleonore, IN, LS
+                  </li>
+                  <li>
+                    <i class="chang fa fa-phone color"></i>(169)904-8990
+                  </li>
+                  <li>
+                    <i class="chang fa fa-envelope color"></i>(169)904-8990
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h5 id="footer_find_Egypt">Egypt Branch</h5>
+                <ul>
+                  <li>
+                    <i class="chang fa fa-map-marker color" id="footer_find_Egypt_title"></i>20952 Jerome
+                    Keys, New Sarinabury, MA, HN
+                  </li>
+                  <li>
+                    <i class="chang fa fa-phone color"></i>(169)904-8990
+                  </li>
+                  <li>
+                    <i class="chang fa fa-envelope color"></i>(169)904-8990
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="chang col-lg-4 col-md-12 col-sm-12 display">
+            <div class="chang Instagram col-md-6">
+              <h1 id="footer_Instagram">Instagram</h1>
+              <div class="chang instagram-1"></div>
+            </div>
+            <div class="chang contact col-md-6">
+              <form method="GET" class="chang col-xl-4 col-md-4 col-sm-12">
+                <h1 id="footer_Contact">Contact us</h1>
+                <input type="text" id="footer_input_name" name="name" placeholder=" Name" required />
+                <input type="tel" name="Phone" placeholder=" Phone" id="footer_input_Phone" required />
+                <input
+                  type="email"
+                  name="email"
+                  id="footer_input_Email"
+                  placeholder=" Email"
+                  required
+                />
+                <textarea rows="5" id="footer_input_message" placeholder="message"></textarea>
+                <input
+                  class="chang send"
+                  id="footer_input_send"
+                  type="submit"
+                  value="send Message"
+                  
+                />
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="chang copy">
+        <div class="chang container">
+          <div class="chang row">
+            <div class="chang col-6">
+              <p id="footer_copy_one">Privacy & Policy&nbsp; |&nbsp; Terms & Conditions</p>
+            </div>
+            <div class="chang col-6">
+              <p style="text-align: end" id="footer_copy_two">Copyright ©2019 All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- end footer -->
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 100vh;" >
-        <div class="modal-dialog modal-xl" style="margin: 0; max-width: 100%">
-          <div class="modal-content" style="background-color: transparent">
+    <div class="chang modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 100vh;" >
+        <div class="chang modal-dialog modal-xl" style="margin: 0; max-width: 100%">
+          <div class="chang modal-content" style="background-color: transparent">
             <button
               type="button"
-              class="close closeModalBtn"
+              class="chang close closeModalBtn"
               data-dismiss="modal"
               aria-label="Close"
             >
@@ -420,177 +464,177 @@
               </svg>
             </button>
 
-            <div class="modal-body test">
+            <div class="chang modal-body test">
               <!-- Swiper -->
-              <div class="swiper-container gallery-top">
-                <div class="swiper-wrapper">
+              <div class="chang swiper-container gallery-top">
+                <div class="chang swiper-wrapper">
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/15.png); width: 80%"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/2.jpg); width: 80%"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/3.png)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/4.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/5.jfif)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/6.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/70.png)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/15.png)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/17.png)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/18.png)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/039.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/038.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/031-s190x90.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/032.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/033.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/034.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/035.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/036.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/037.jpg)"
                   ></div>
                 </div>
                 <!-- Add Arrows -->
               </div>
-              <div class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
+              <div class="chang swiper-container gallery-thumbs">
+                <div class="chang swiper-wrapper">
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/07.png)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/2.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/3.png)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/4.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/5.jfif)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/6.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/70.png)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/15.png)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/17.png)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/18.png)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/039.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/038.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/031-s190x90.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/032.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/033.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/034.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/035.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/036.jpg)"
                   ></div>
                   <div
-                    class="swiper-slide"
+                    class="chang swiper-slide"
                     style="background-image: url(./img/037.jpg)"
                   ></div>
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next swiper-button-white"></div>
-            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="chang swiper-button-next swiper-button-white"></div>
+            <div class="chang swiper-button-prev swiper-button-white"></div>
           </div>
         </div>
     </div>
     <!-- model -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

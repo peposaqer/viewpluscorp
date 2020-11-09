@@ -1,7 +1,7 @@
-/* .right-dir{
+.right-dir{
   direction: rtl;
-} */
-
+  text-align: right;
+}
 
 html,
 body {
@@ -125,7 +125,7 @@ a {
 .smart .mage {
   background-size: cover;
   position: absolute;
-  left: 23rem;
+  left: 23rem !important;
   margin-top: 10rem;
 }
 
@@ -155,7 +155,7 @@ a {
 
 .smart .group p {
   color: #4b4b4b;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.8;
   margin-bottom: 3rem;
 }
@@ -266,7 +266,7 @@ a {
 
 .Evaluation p {
   color: #4b4b4b;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.8;
   margin-bottom: 3rem;
 }
@@ -294,7 +294,7 @@ a {
 .Evaluation .mage {
   background-size: cover;
   position: absolute;
-  left: 23rem;
+  left: 23rem !important;
   margin-top: 10rem;
 }
 
@@ -337,7 +337,7 @@ a {
 }
 
 .Veyolo p {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .Veyolo h1 {
@@ -377,7 +377,7 @@ a {
 }
 
 .inon p {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.8;
   width: 70%;
 }
@@ -412,13 +412,13 @@ a {
   flex-flow: column;
   justify-content: center;
   /* margin-top: %; */
-  /* margin-left: -16%; */
+  /* margin-right: -16%; */
   max-width: 45%;
 }
 
 .Partners .hand {
   margin-top: 20%;
-  width: 120%;
+  width: 100%;
 }
 
 .Partners h1 {
@@ -516,7 +516,7 @@ a {
   min-height: 1px;
 }
 [dir="rtl"] .slick-slide {
-  float: right;
+  float: left;
 }
 .slick-slide img {
   display: block;
@@ -622,7 +622,7 @@ a {
 
   .smart .mage {
     margin-top: 18rem !important; 
-    left: 1rem !important;
+    left: 1rem ;
     width: 20% !important;
   }
 
@@ -1061,7 +1061,7 @@ a {
 
   .Evaluation .evaluatuin-img-tab1 {
     width: auto;
-    height: 70%;
+    height: 47%;
     margin-left: 0rem;
     margin-top: 17rem;
   }
@@ -1131,7 +1131,7 @@ a {
   }
 
   .Evaluation .evaluatuin-img-tab1 {
-    height: 70%;
+    height: 50%;
   }
 
   .Veyolo .group {

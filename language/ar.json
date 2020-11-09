@@ -1,0 +1,217 @@
+{
+  "home": "الرئيسية",
+
+  "Event": "المؤتمرات",
+
+  "team": "فريق العمل",
+
+  "Career": "الوظائف",
+
+  "home1": "الرئيسية",
+
+  "Event1": "المؤتمرات",
+
+  "team1": "فريق العمل",
+
+  "career1": "الوظائف",
+
+  "header_dircation":
+    "في عام 2012 ، كان لدينا رؤية ، كان لدينا حلم بجعل العالم مكانًا أفضل وإعطاء العالم الحلول الدقيقة التي يحتاجها ، لذلك وضعنا اللبنة الأولى في الاعتبار لجعل هذه الرؤية واضحة وتحقيق هذا الحلم ، plus ليست شركة ولا ننوي أن نكون شركة ، view plus هي مجرد حل وذكي!",
+
+  "header_button": "قراءة المزيد",
+
+  "Vision_title": "رؤيتنا",
+
+  "Vision_dircation":
+    "كان لدينا حلم وبالحكمة والمعرفة أوضحنا الأمر بوضوح ، نريد إجراء تغيير ، نريد حياة أفضل للشركات فقط ولكن أيضًا للبشر ، ونعلم تمامًا كيف نفعل ذلك.",
+
+  "Mission_title": "مهمتنا",
+
+  "Mission_dircation":
+    "كل شخص لديه مهمة معينة تم استدعاؤه للوفاء بها وقد تلقينا دعوتنا نحن هنا ليس فقط لإجراء تغيير ولكن نحن هنا للإلهام والمساعدة والحل هذا هو رمزنا وكما قيل من قبل لسنا شركة ولا ننوي أن نكون شركة نحن View Plus.",
+
+  "Mission_button": "أقرأ أقل",
+
+  "smart_title": "بوابة Qis",
+
+  "smart_dircation":
+    "كان لدينا حلم وبالتكنولوجيا والمعرفة اصبح الأمر واضحا ، نريد إجراء تغيير ، نريد دورة حياة أفضل ليس فقط من اجل الشركات ولكن أيضًا للافراد ، ونعرف بالتحديد كيف نفعل ذلك .",
+
+  "smart_button": "زيارة الموقع",
+
+  "Evaluation_title": "موربي لوريت",
+
+  "Evaluation_dircation":
+    "تعبيرات Emojis الخاصة بنا سهلة الاستخدام وسهلة لتمكين العميل من إرسال صوته مباشرة إلى صانعي القرار دون أي عائق وسهولة في جمع بيانات العملاء الخاصة بهم. إنه يجعل من السهل جدًا متابعة التعليقات وتحليلها ، حيث يتيح لك توفير الوقت والطاقة للتركيز على تحسين آراء العملاء.",
+
+  "Evaluation_button": "زيارة الموقع",
+
+  "Veyolo_title": "نولا فيفيرا",
+
+  "Veyolo_dircation":
+    "تطبيق صمم خصيصا لمساعده أصحاب الجراشات وتأجير السيارات علي تنظيم جميع المعاملات المالية و عملية التاجير كامله التي تتم بين المستأجر و المستاجر منه",
+
+  "inon_title": "موربي بورتا",
+
+  "inon_dircation":
+    "تم تطويره لمواكبة التطور التكنولوجي في العصر الحديث ، حيث يتيح لضيف المطعم رؤية أنواع الأطعمة التي يقدمها المطعم والتعرف على ملفه الشخصي",
+
+  "inon_button": "زيارة الموقع",
+
+  "partner_title": "شركائنا",
+
+  "partner_dircation":
+    "الوحدة قوة ، عندما يكون هناك تعاون ، يمكن تحقيق أشياء رائعة.",
+
+  "footer_dircation":
+    "في عام 2012 ، كان لدينا رؤية ، كان لدينا حلم بجعل العالم مكانًا أفضل وإعطاء العالم الحلول الدقيقة التي يحتاجها لذلك وضعنا اللبنة الأولى في الاعتبار بالإضافة إلى توضيح هذه الرؤية وتحقيق هذا الحلم ، view plus ليست شركة ولا تنوي أن تكون شركة ، view plus هي مجرد حل وذكي!",
+
+  "footer_follow_us": "تابعنا",
+
+  "footer_product": "منتجات",
+
+  "footer_Sitemap": "خريطة الموقع",
+
+  
+  "footer_find": "تجدنا",
+
+  "footer_find_riyadh": "فرع الرياض",
+
+  "footer_find_riyadh_title": "644 Haley Harbors, Corkeryview, HI, AE",
+
+  "footer_find_Jaddah": "فرع جدة",
+
+  "footer_find_Jaddah_title": "15047 Oswaldo Lights, East Eleonore, IN, LS",
+
+  "footer_find_Egypt": "فرع مصر",
+
+  "footer_find_Egypt_title": "20952 Jerome Keys, New Sarinabury, MA, HN",
+
+  "footer_Instagram": "انستغرام",
+
+  "footer_Contact": "اتصل بنا",
+
+  "footer_input_name": "اسم",
+
+  "footer_input_Phone": "هاتف",
+
+  "footer_input_Email": "البريد الإلكتروني",
+
+  "footer_input_message": "رسالة",
+
+  "footer_input_send": "إرسال رسالة",
+
+  "footer_input_name1": "اسم",
+
+  "footer_input_Phone1": "هاتف",
+
+  "footer_input_Email1": "البريد الإلكتروني",
+
+  "footer_input_message1": "رسالة",
+
+  "footer_input_send1": "إرسال رسالة",
+
+  "footer_input_name2": "اسم",
+
+  "footer_input_Phone2": "هاتف",
+
+  "footer_input_Email2": "البريد الإلكتروني",
+
+  "footer_input_message2": "رسالة",
+
+  "footer_input_send2": "إرسال رسالة",
+  "footer_copy_one": "سياسة الخصوصية و الأستخدام | الشروط و الأحكام",
+
+  "footer_copy_two": "جميع حقوق النشر محفوظة © 2020",
+
+  "event_event_title": "لدينا مقعد لك",
+
+  "event_event_dircation":
+    "نحن لا نتذكر الأيام بل اللحظات ، عندما ظهرت أفكارنا في الحياة!",
+
+  "event_Lobortis_title": "Lobortis est viverra",
+
+  "event_Lobortis_span": "رومانيا، هانوي 03/12/2001",
+
+  "event_Lobortis_dircation":
+    "Fusce at nisi eget dolor rhoncus facilisis. Mauris ante nisl, consectetur et luctus et, porta ut dolor. Curabitur ultricies ultrices nulla.",
+
+  "openModal": "عرض الصورة",
+
+  "team_slider_dircation":
+    "present eu dolor eu orci videicula euismod. Vivamus sed sollicitudin Libero، velma lesuadavelitNu llamet maximus lorem. تعليق maximus dolor quis dueat volutpat. دونيك فيتيكولايل iteueratpu lvinarvel congue ex egestas. present egestas purus dolor ، a porta arcu pharetra quis. Sevesti bulumsemp eligula ،",
+
+  "team_jion_title": "انضم إلى طاقمنا",
+
+  "team_jion_dircation":
+    "يمكننا أن نكون فريقًا ، فريقًا رائعًا جيدًا! ماذا تنتظر!",
+
+  "openApplayForm": "إرسال المحفظة",
+
+  "team_cv_title": "انضم إلى طاقمنا",
+
+  "team_cv_drop_dircation": "قم بسحب وإسقاط السيرة الذاتية لتحميل أو اختيار ملف",
+
+  "team_cv_drop_dircation1": "قم بسحب وإسقاط السيرة الذاتية لتحميل أو اختيار ملف",
+
+  "team_cv_Subject": "موضوع",
+
+  "team_cv_Subject1": "موضوع",
+
+  "team_jion_title1": "انضم إلى طاقمنا",
+
+  "career_event_title": "لدينا مقعد لك",
+
+  "portfolio": "إرسال المحفظة",
+  
+  "portfolio1": "إرسال المحفظة",
+  
+  "portfolio2": "إرسال المحفظة",
+  
+  "portfolio3": "إرسال المحفظة",
+
+  "career_event_dircation":
+    "يمكننا أن نكون فريقًا ، فريقًا رائعًا جيدًا! ماذا تنتظر!",
+
+  "career_tabs_span": "خبرة لا تقل عن سنتين في نفس المجال",
+
+  "career_tabs_span1": "خبرة لا تقل عن سنتين في نفس المجال",
+
+  "career_tabs_span2": "خبرة لا تقل عن سنتين في نفس المجال",
+
+  "career_tabs_span3": "خبرة لا تقل عن سنتين في نفس المجال",
+
+  "career_model_one": "خبره",
+
+  "career_model_one1": "خبره",
+
+  "career_model_two": "+ 2 سنه",
+
+  "career_model_three": "راتب",
+
+  "career_model_four": "450 دولار + تأمين",
+
+  "career_model_five": "المستوى الوظيفي",
+
+  "career_model_six": "مبتدأ",
+
+  "career_model_seven": "الشواغر",
+
+  "career_model_eight": "2 مقعد",
+
+  "career_model_nine": "نوع الوظيفة",
+
+  "career_model_ten": "وقت كامل",
+
+  "career_model_eleven": "خبره",
+
+  "career_model_title_one": "المتطلبات",
+
+  "career_model_dircation_one":
+    "Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet. Nunc congue ex vel nisl viverra, sit amet aliquet lectus ullamcorper. Praesent luctus lacus non lorem elementum, eu tristique sapien suscipit. Sed bibendum, ipsum nec viverra malesuada, erat nisi sodales purus, eget hendrerit dui ligula eu enim. Ut non est nisi. Pellentesque tristique pretium dolor eu commodo. Proin iaculis nibh vitae lectus mollis bibendum. Quisque varius eget urna sit amet luctus. Suspendisse potenti. Curabitur ac placerat est, sit amet sodales risus. Pellentesque viverra dui auctor, ullamcorper turpis pharetra, facilisis quam.",
+
+  "career_model_title_two": "المسؤوليات",
+
+  "career_model_dircation_two":
+    "In at iaculis lorem. Praesent tempor dictum tellus ut molestie. Sed sed ullamcorper lorem, id faucibus odio. Duis eu nisl ut ligula cursus molestie at at dolor. Nulla est justo, pellentesque vel lectus eget, fermentum varius dui. Morbi faucibus quam sed efficitur interdum. Suspendisse in pretium magna. Vivamus nec orci purus. Quisque accumsan dictum urna semper laoreet. Sed id rutrum tellus. In nisi sapien, sagittis faucibus tincidunt et, lacinia id felis. Ut tempor lectus porta, tempus orci ac, feugiat tellus. Suspendisse sagittis libero vitae metus sodales, id semper justo congue. Donec quam lorem, efficitur sit amet ex dapibus,"
+}

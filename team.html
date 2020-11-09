@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/utlilty.css" />
     <link rel="stylesheet" href="css/team.css" />
   </head>
-  <body>
+  <body onload="loadLang()">
     <!-- start nav -->
     <nav class="">
       <div class="container">
@@ -132,15 +132,15 @@
                 style="width: 55px; height: 55px"
             /></a>
           </li>
-          <li><a href="home.html">Home </a></li>
-          <li><a href="event.html">event</a></li>
-          <li><a class="active" href="team.html">Team</a></li>
-          <li><a href="career.html">Career</a></li>
+          <li><a href="home.html" id="home">Home </a></li>
+          <li><a href="event.html" id="Event">event</a></li>
+          <li><a class="active" href="team.html" id="team">Team</a></li>
+          <li><a href="career.html" id="Career">Career</a></li>
           <li>
             <div class="di">
-              <a href="" class="en">En</a>
+              <a href="#" class="en" onclick="setLanguage('en')">En</a>
               <span class="spa">|</span>
-              <a href="" class="en">العربيه</a>
+              <a href="#" class="arbic" onclick="setLanguage('ar')">العربيه</a>
             </div>
           </li>
         </ul>
@@ -148,84 +148,84 @@
     </nav>
     <!-- end nav -->
     <!-- start  Swiper -->
-    <div class="slider">
+    <div class=" slider">
         <div class="swiper-container gallery-top">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-xl-6 col-md-6 col-sm-12" style="margin: 0; padding: 0;">
-                            <img src="img/21.png" class="person" alt="">
+            <div class=" swiper-wrapper">
+                <div class=" swiper-slide">
+                    <div class="chang row">
+                        <div class="chang col-xl-6 col-md-6 col-sm-12" style="margin: 0; padding: 0;">
+                            <img src="img/21.png" class="chang person" alt="">
                         </div>
-                        <div class="col-xl-6 col-md-6 col-sm-12" style="background-color: #FFF;">
-                            <div class="pepole">
+                        <div class="chang col-xl-6 col-md-6 col-sm-12" style="background-color: #FFF;">
+                            <div class="chang pepole">
                                 <h1>Mohamed Saqer</h1>
                                 <span>UI / UX Designer</span>
                                 <ul>
-                                    <li><i class="fab fa-linkedin-in"></i></li>
-                                    <li><i class="fab fa-facebook-f"></i></li>
-                                    <li><i class="fab fa-twitter"></i></li>
+                                    <li><i class="chang fab fa-linkedin-in"></i></li>
+                                    <li><i class="chang fab fa-facebook-f"></i></li>
+                                    <li><i class="chang fab fa-twitter"></i></li>
                                 </ul>
-                                <p>Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, velma lesuadavelitNu llamet maximus lorem. Suspendisse maximus dolor quis consequat volutpat. Donec vehiculael iteueratpu lvinarvel congue ex egestas. Praesent egestas purus dolor, a porta arcu pharetra quis. Sevesti bulumsemp eligula,
+                                <p id="team_slider_dircation">Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, velma lesuadavelitNu llamet maximus lorem. Suspendisse maximus dolor quis consequat volutpat. Donec vehiculael iteueratpu lvinarvel congue ex egestas. Praesent egestas purus dolor, a porta arcu pharetra quis. Sevesti bulumsemp eligula,
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-xl-6 col-md-6 col-sm-12" style="margin: 0; padding: 0;">
+                <div class="chang swiper-slide">
+                    <div class="chang row">
+                        <div class="chang col-xl-6 col-md-6 col-sm-12" style="margin: 0; padding: 0;">
                             <img src="img/21.png" alt="" style="opacity: 1; width: 50%; height: 100%; text-align: center; margin-left: 25%">
                         </div>
-                        <div class="col-xl-6 col-md-6 col-sm-12" style="background-color: #FFF;">
-                            <div class="pepole">
+                        <div class="chang col-xl-6 col-md-6 col-sm-12" style="background-color: #FFF;">
+                            <div class="chang pepole">
                                 <h1>Mohamed nasser</h1>
                                 <span>UI / UX Designer</span>
                                 <ul>
-                                    <li><i class="fab fa-linkedin-in"></i></li>
-                                    <li><i class="fab fa-facebook-f"></i></li>
-                                    <li><i class="fab fa-twitter"></i></li>
+                                    <li><i class="chang fab fa-linkedin-in"></i></li>
+                                    <li><i class="chang fab fa-facebook-f"></i></li>
+                                    <li><i class="chang fab fa-twitter"></i></li>
                                 </ul>
-                                <p>Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, velmal esuadavel it Nullamet maximus lorem. Suspendisse maximus dolor quis consequat volutpat. Donec vehicul aeliteuera tpulvin arvel congue ex egestas. Praesent egestas purus dolor, a porta arcu pharetra quis. Sevesti bulumsem peligula,
+                                <p id="team_slider_dircation">Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, velmal esuadavel it Nullamet maximus lorem. Suspendisse maximus dolor quis consequat volutpat. Donec vehicul aeliteuera tpulvin arvel congue ex egestas. Praesent egestas purus dolor, a porta arcu pharetra quis. Sevesti bulumsem peligula,
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-xl-6 col-md-6 col-sm-12" style="margin: 0; padding: 0; ">
+                <div class="chang swiper-slide">
+                    <div class="chang row">
+                        <div class="chang col-xl-6 col-md-6 col-sm-12" style="margin: 0; padding: 0; ">
                             <img src="img/21.png" alt="" style="opacity: 1; width: 50%; height: 100%; text-align: center; margin-left: 25%">
                         </div>
-                        <div class="col-xl-6 col-md-6 col-sm-12" style="background-color: #FFF;">
-                            <div class="pepole">
+                        <div class="chang col-xl-6 col-md-6 col-sm-12" style="background-color: #FFF;">
+                            <div class="chang pepole">
                                 <h1>Mohamed sahel</h1>
                                 <span>UI / UX Designer</span>
                                 <ul>
-                                    <li><i class="fab fa-linkedin-in"></i></li>
-                                    <li><i class="fab fa-facebook-f"></i></li>
-                                    <li><i class="fab fa-twitter"></i></li>
+                                    <li><i class="chang fab fa-linkedin-in"></i></li>
+                                    <li><i class="chang fab fa-facebook-f"></i></li>
+                                    <li><i class="chang fab fa-twitter"></i></li>
                                 </ul>
-                                <p>Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, velmales uadavelit Nullamet maximus lorem. Suspendisse maximus dolor quis consequat volutpat. Donec vehicu lae liteuerat pulvi narvel congue ex egestas. Praesent egestas purus dolor, a porta arcu pharetra quis. Sevest ibulumsem peligula,
+                                <p id="team_slider_dircation">Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, velmales uadavelit Nullamet maximus lorem. Suspendisse maximus dolor quis consequat volutpat. Donec vehicu lae liteuerat pulvi narvel congue ex egestas. Praesent egestas purus dolor, a porta arcu pharetra quis. Sevest ibulumsem peligula,
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-xl-6 col-md-6 col-sm-12" style="margin: 0; padding: 0;">
+                <div class="chang swiper-slide">
+                    <div class="chang row">
+                        <div class="chang col-xl-6 col-md-6 col-sm-12" style="margin: 0; padding: 0;">
                             <img src="img/21.png" alt="" style="opacity: 1; width: 50%; height: 100%; text-align: center; margin-left: 25%">
                         </div>
-                        <div class="col-xl-6 col-md-6 col-sm-12" style="background-color: #FFF;">
-                            <div class="pepole">
+                        <div class="chang col-xl-6 col-md-6 col-sm-12" style="background-color: #FFF;">
+                            <div class="chang pepole">
                                 <h1>Ahamed</h1>
                                 <span>UI / UX Designer</span>
                                 <ul>
-                                    <li><i class="fab fa-linkedin-in"></i></li>
-                                    <li><i class="fab fa-facebook-f"></i></li>
-                                    <li><i class="fab fa-twitter"></i></li>
+                                    <li><i class="chang fab fa-linkedin-in"></i></li>
+                                    <li><i class="chang fab fa-facebook-f"></i></li>
+                                    <li><i class="chang fab fa-twitter"></i></li>
                                 </ul>
-                                <p>Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, velmalesuadavelitNullamet
+                                <p id="team_slider_dircation">Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, velmalesuadavelitNullamet
                                     maximus lorem. Suspendisse maximus dolor quis consequat volutpat. Donec vehiculaeliteueratpulvinarvel
                                     congue ex egestas. Praesent egestas purus dolor, a porta arcu pharetra quis. Sevestibulumsempeligula,
                                 </p>
@@ -235,30 +235,30 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-container gallery-thumbs" >
-            <a href="#!" class="arrow-left" style="display: inline-flex; z-index: 201;"><img src="img/arrow-left.svg"></a>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(img/22.png)"></div>
-                <div class="swiper-slide" style="background-image:url(img/23.png)"></div>
-                <div class="swiper-slide" style="background-image:url(img/14.png)"></div>
-                <div class="swiper-slide" style="background-image:url(img/25.png)"></div>
+        <div class="chang swiper-container gallery-thumbs" >
+            <a href="#!" class="chang arrow-left" style="display: inline-flex; z-index: 201;"><img src="img/arrow-left.svg"></a>
+            <div class="chang swiper-wrapper">
+                <div class="chang swiper-slide" style="background-image:url(img/22.png)"></div>
+                <div class="chang swiper-slide" style="background-image:url(img/23.png)"></div>
+                <div class="chang swiper-slide" style="background-image:url(img/14.png)"></div>
+                <div class="chang swiper-slide" style="background-image:url(img/25.png)"></div>
             </div>
-            <a href="#!" class="arrow-right" style="display: inline-flex; z-index: 201;"><img src="img/arrow-right.svg"></a>
+            <a href="#!" class="chang arrow-right" style="display: inline-flex; z-index: 201;"><img src="img/arrow-right.svg"></a>
         </div>  
     </div>
     <!-- end swiper -->
     <!-- start jion -->
-    <div class="jion">
-      <div class="container">
-        <div class="row revers">
-          <div class="col-lg-6 col-md-12">
-            <div class="group" data-aos="fade-up">
-              <h1>Join Our Crew</h1>
-              <p>Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis rutrum non risus in imperdiet. Proin molestie accumsan nulla sit amet</p>
-              <a class="openCvBtn" href="#!" id="openApplayForm">Send portfolio</a>
+    <div class="chang jion">
+      <div class="chang container">
+        <div class="chang row revers">
+          <div class="chang col-lg-6 col-md-12">
+            <div class="chang group" data-aos="fade-up">
+              <h1 id="team_jion_title">Join Our Crew</h1>
+              <p id="team_jion_dircation">We can be a team, a pretty good awesome team! what are you waiting for!</p>
+              <a class="chang openCvBtn" href="#!" id="openApplayForm">Send portfolio</a>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12">
+          <div class="chang col-lg-6 col-md-12">
             <img src="img/20.png" data-aos="fade-up" data-aos-duration="10000">
           </div>
         </div>
@@ -266,23 +266,23 @@
     </div>
     <!-- end jion -->
     <!-- start cv -->
-    <div class="cv" style="display: none">
-        <div class="apply">
+    <div class="chang cv" style="display: none">
+        <div class="chang apply">
           <form method="GET">
             <div style="display: flex; align-items: center;">
-              <a href="#!" class="arrow"><i class="fa fa-arrow-left"></i></a>
-              <h1>Join Our Crew Now</h1>
+              <a href="#!" class="chang arrow"><i class="chang fa fa-arrow-left"></i></a>
+              <h1 id="team_cv_title">Join Our Crew Now</h1>
             </div>
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="tel" name="Phone" placeholder="Your Phone" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <input type="text" name="subject" placeholder="Subject" required />
-            <textarea rows="3" placeholder="Message"></textarea>
-            <div class="cloud">
+            <input type="text" id="footer_input_name" name="name" placeholder="Your Name" required />
+            <input type="tel" id="footer_input_Phone" name="Phone" placeholder="Your Phone" required />
+            <input type="email" id="footer_input_Email1" name="email" placeholder="Your Email" required />
+            <input type="text" id="team_cv_Subject" name="subject" placeholder="Subject" required />
+            <textarea rows="3" id="footer_input_message" placeholder="Message"></textarea>
+            <div class="chang cloud">
               <img src="img/cloud_upload-24px.svg" />
-              <h3>Drag & Drop CV to upload or choose file</h3>
+              <h3 id="team_cv_drop_dircation">Drag & Drop CV to upload or choose file</h3>
             </div>
-            <input type="submit" value="Apply Now " class="send" />
+            <input type="submit" id="footer_input_send" value="Apply Now " class="chang send" />
           </form>
         </div>
         <!-- </div>
@@ -290,13 +290,13 @@
     </div>
     <!-- end cv -->
     <!-- start footer -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="viewplus">
+    <div class="chang footer">
+      <div class="chang container">
+        <div class="chang row">
+          <div class="chang col-lg-4 col-md-6 col-sm-12">
+            <div class="chang viewplus">
               <img src="img/logo-white.png" alt="" />
-              <p>
+              <p id="footer_dircation">
                 Back in 2012 we had a vision, we had a dream of making the world
                 a better place and give the world the exact solutions it needs
                 so we put the first brick in view plus to make that vision clear
@@ -305,32 +305,32 @@
                 one!
               </p>
             </div>
-            <div class="follow">
-              <h1>Follow Us</h1>
-              <ul class="soical">
+            <div class="chang follow">
+              <h1 id="footer_follow_us">Follow Us</h1>
+              <ul class="chang soical">
                 <li>
-                  <a href="#!"><i class="fab fa-linkedin"></i></a>
+                  <a href="#!"><i class="chang fab fa-linkedin"></i></a>
                 </li>
                 <li>
-                  <a href="#!"><i class="fab fa-facebook"></i></a>
+                  <a href="#!"><i class="chang fab fa-facebook"></i></a>
                 </li>
                 <li>
-                  <a href="#!"><i class="fab fa-twitter"></i></a>
+                  <a href="#!"><i class="chang fab fa-twitter"></i></a>
                 </li>
                 <li>
-                  <a href="#!"><i class="fab fa-youtube"></i></a>
+                  <a href="#!"><i class="chang fab fa-youtube"></i></a>
                 </li>
                 <li>
-                  <a href="#!"><i class="fab fa-snapchat"></i></a>
+                  <a href="#!"><i class="chang fab fa-snapchat"></i></a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="links">
-              <div class="row">
-                <div class="col-6">
-                  <h1>Products</h1>
+          <div class="chang col-lg-4 col-md-6 col-sm-12">
+            <div class="chang links">
+              <div class="chang row">
+                <div class="chang col-6">
+                  <h1 id="footer_product">Products</h1>
                   <ul>
                     <li><a href="#!">Smart Ads</a></li>
                     <li><a href="#!">Evaluation</a></li>
@@ -338,93 +338,111 @@
                     <li><a href="#!">Inon</a></li>
                   </ul>
                 </div>
-                <div class="col-6">
-                  <h1>Sitemap</h1>
+                <div class="chang col-6">
+                  <h1 id="footer_Sitemap">Sitemap</h1>
                   <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="event.html">Event</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="career.html">Career</a></li>
+                    <li><a href="home.html" id="home1">Home</a></li>
+                    <li><a href="event.html" id="Event1">Event</a></li>
+                    <li><a href="#" id="team1">Team</a></li>
+                    <li><a href="career.html" id="career1">Career</a></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="find">
-              <h1>Find Us</h1>
+            <div class="chang find">
+              <h1 id="footer_find">Find Us</h1>
               <div>
-                <h5>Riyadh Branch</h5>
+                <h5 id="footer_find_riyadh">Riyadh Branch</h5>
                 <ul>
                   <li>
-                    <i class="fa fa-map-marker color"></i>644 Haley Harbors,
-                    Corkeryview, HI, AE
+                    <i class="chang fa fa-map-marker color" id="footer_find_riyadh_title"></i>644 Haley
+                    Harbors, Corkeryview, HI, AE
                   </li>
-                  <li><i class="fa fa-phone color"></i>(169)904-8990</li>
-                  <li><i class="fa fa-envelope color"></i>(169)904-8990</li>
+                  <li>
+                    <i class="chang fa fa-phone color"></i>(169)904-8990
+                  </li>
+                  <li>
+                    <i class="chang fa fa-envelope color"></i>(169)904-8990
+                  </li>
                 </ul>
               </div>
               <div>
-                <h5>Jaddah Branch</h5>
+                <h5 id="footer_find_Jaddah">Jaddah Branch</h5>
                 <ul>
                   <li>
-                    <i class="fa fa-map-marker color"></i>15047 Oswaldo Lights,
-                    East Eleonore, IN, LS
+                    <i class="chang fa fa-map-marker color" id="footer_find_Jaddah_title"></i>15047
+                    Oswaldo Lights, East Eleonore, IN, LS
                   </li>
-                  <li><i class="fa fa-phone color"></i>(169)904-8990</li>
-                  <li><i class="fa fa-envelope color"></i>(169)904-8990</li>
+                  <li>
+                    <i class="chang fa fa-phone color"></i>(169)904-8990
+                  </li>
+                  <li>
+                    <i class="chang fa fa-envelope color"></i>(169)904-8990
+                  </li>
                 </ul>
               </div>
               <div>
-                <h5>Egypt Branch</h5>
+                <h5 id="footer_find_Egypt">Egypt Branch</h5>
                 <ul>
                   <li>
-                    <i class="fa fa-map-marker color"></i>20952 Jerome Keys, New
-                    Sarinabury, MA, HN
+                    <i class="chang fa fa-map-marker color" id="footer_find_Egypt_title"></i>20952 Jerome
+                    Keys, New Sarinabury, MA, HN
                   </li>
-                  <li><i class="fa fa-phone color"></i>(169)904-8990</li>
-                  <li><i class="fa fa-envelope color"></i>(169)904-8990</li>
+                  <li>
+                    <i class="chang fa fa-phone color"></i>(169)904-8990
+                  </li>
+                  <li>
+                    <i class="chang fa fa-envelope color"></i>(169)904-8990
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 col-sm-12 display">
-            <div class="Instagram col-md-6">
-              <h1>Instagram</h1>
-              <div class="instagram-1"></div>
+          <div class="chang col-lg-4 col-md-12 col-sm-12 display">
+            <div class="chang Instagram col-md-6">
+              <h1 id="footer_Instagram">Instagram</h1>
+              <div class="chang instagram-1"></div>
             </div>
-            <div class="contact col-md-6">
-              <form method="GET" class="col-xl-4 col-md-4 col-sm-12">
-                <h1>Contact us</h1>
-                <input type="text" name="name" placeholder=" Name" required />
-                <input type="tel" name="Phone" placeholder=" Phone" required />
+            <div class="chang contact col-md-6">
+              <form method="GET" class="chang col-xl-4 col-md-4 col-sm-12">
+                <h1 id="footer_Contact">Contact us</h1>
+                <input type="text" id="footer_input_name1" name="name" placeholder=" Name" required />
+                <input type="tel" name="Phone" placeholder=" Phone" id="footer_input_Phone1" required />
                 <input
                   type="email"
                   name="email"
+                  id="footer_input_Email1"
                   placeholder=" Email"
                   required
                 />
-                <textarea rows="5" placeholder="message"></textarea>
-                <input class="send" type="submit" value="send Message" />
+                <textarea rows="5" id="footer_input_message1" placeholder="message"></textarea>
+                <input
+                  class="chang send"
+                  id="footer_input_send1"
+                  type="submit"
+                  value="send Message"
+                  
+                />
               </form>
             </div>
           </div>
         </div>
       </div>
-      <div class="copy">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <p>Privacy & Policy&nbsp; |&nbsp; Terms & Conditions</p>
+      <div class="chang copy">
+        <div class="chang container">
+          <div class="chang row">
+            <div class="chang col-6">
+              <p id="footer_copy_one">Privacy & Policy&nbsp; |&nbsp; Terms & Conditions</p>
             </div>
-            <div class="col-6">
-              <p style="text-align: end">Copyright ©2019 All rights reserved</p>
+            <div class="chang col-6">
+              <p style="text-align: end" id="footer_copy_two">Copyright ©2019 All rights reserved</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- end footer -->
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

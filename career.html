@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/utlilty.css" />
     <link rel="stylesheet" href="css/career.css" />
 </head>
-<body>
+<body onload="loadLang()">
     <!-- start nav -->
     <nav class="">
       <div class="container">
@@ -131,15 +131,15 @@
                 style="width: 55px; height: 55px"
             /></a>
           </li>
-          <li><a href="home.html">Home </a></li>
-          <li><a href="event.html">event</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a class="active" href="career.html">Career</a></li>
+          <li><a href="home.html" id="home">Home </a></li>
+          <li><a href="event.html" id="Event">event</a></li>
+          <li><a href="team.html" id="team">Team</a></li>
+          <li><a class="active" href="career.html" id="Career">Career</a></li>
           <li>
             <div class="di">
-              <a href="" class="en">En</a>
+              <a href="#" class="en" onclick="setLanguage('en')">En</a>
               <span class="spa">|</span>
-              <a href="" class="en">العربيه</a>
+              <a href="#" class="arbic" onclick="setLanguage('ar')">العربيه</a>
             </div>
           </li>
         </ul>
@@ -147,18 +147,18 @@
     </nav>
     <!-- end nav -->
     <!-- start event -->
-    <div class="event">
-      <div class="container">
-        <div class="row revers">
-          <div class="col-lg-6 col-md-12">
-            <div class="group">
-              <h1>We have a seat for you</h1>
-              <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog.</p>
+    <div class="chang event">
+      <div class="chang container">
+        <div class="chang row revers">
+          <div class="chang col-lg-6 col-md-12">
+            <div class="chang group">
+              <h1 id="career_event_title">We have a seat for you</h1>
+              <p id="career_event_dircation">We can be a team, a pretty good awesome team! what are you waiting for!</p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 smart-contener-img">
-            <img src="img/careers-bg.svg" class="smart-img-back" data-aos="fade-up-left">
-            <img src="img/chair_1@2x@2x.png" class="smart-img-front" data-aos="fade-down-left">
+          <div class="chang col-lg-6 col-md-12 smart-contener-img">
+            <img src="img/careers-bg.svg" class="chang smart-img-back" data-aos="fade-up-left">
+            <img src="img/chair_1@2x@2x.png" class="chang smart-img-front" data-aos="fade-down-left">
           </div>
         </div>
       </div>
@@ -185,29 +185,29 @@
                   <div class="tab-pane fade show active in" id="Designer" role="tabpanel" aria-labelledby="Designer-tab">
                       <div>
                           <h1>UI Designer</h1>
-                          <span>Minimum 2 Years experience in the same field</span>
-                          <a class="openCvBtn" href="#!" onclick="showpor()">Send portfolio</a>
+                          <span id="career_tabs_span">Minimum 2 Years experience in the same field</span>
+                          <a class="openCvBtn" id="portfolio1"href="#!" onclick="showpor()">Send portfolio</a>
                       </div>
                       <div>
                           <h1>UX Designer</h1>
-                          <span>Minimum 2 Years experience in the same field</span>
-                          <a class="openCvBtn" href="#!" onclick="showpor()">Send portfolio</a>
+                          <span id="career_tabs_span1">Minimum 2 Years experience in the same field</span>
+                          <a class="openCvBtn" href="#!" id="portfolio" onclick="showpor()">Send portfolio</a>
                       </div>
                       <div>
                           <h1>Junior Graphic Designer</h1>
-                          <span>Minimum 2 Years experience in the same field</span>
-                          <a class="openCvBtn" href="#!">Send portfolio</a>
+                          <span id="career_tabs_span2">Minimum 2 Years experience in the same field</span>
+                          <a class="openCvBtn" id="portfolio2"href="#!">Send portfolio</a>
                       </div>
                       <div>
                           <h1>Art Director</h1>
-                          <span>Minimum 2 Years experience in the same field</span>
-                          <a class="openCvBtn" href="#!" onclick="showpor()">Send portfolio</a>
+                          <span id="career_tabs_span3">Minimum 2 Years experience in the same field</span>
+                          <a class="openCvBtn" id="portfolio3" href="#!" onclick="showpor()">Send portfolio</a>
                       </div>
                   </div>
                   <div class="tab-pane fade" id="Developers" role="tabpanel" aria-labelledby="Developers-tab">
                       <div>
                           <h1>UI Developers</h1>
-                          <span>Minimum 2 Years experience in the same field</span>
+                          <span id="career_tabs_span">Minimum 2 Years experience in the same field</span>
                           <a class="openCvBtn"  onclick="showpor()">Send portfolio</a>
                       </div>
                       <div>
@@ -229,7 +229,7 @@
                   <div class="tab-pane fade" id="Marketing" role="tabpanel" aria-labelledby="Marketing-tab">
                       <div>
                           <h1>UI Marketing</h1>
-                          <span>Minimum 2 Years experience in the same field</span>
+                          <span id="career_tabs_span">Minimum 2 Years experience in the same field</span>
                           <a class="openCvBtn" href="#!" onclick="showpor()">Send portfolio</a>
                       </div>
                       <div>
@@ -251,7 +251,7 @@
                   <div class="tab-pane fade" id="Resources" role="tabpanel" aria-labelledby="Resources-tab">
                       <div>
                           <h1>UI Resources</h1>
-                          <span>Minimum 2 Years experience in the same field</span>
+                          <span id="career_tabs_span">Minimum 2 Years experience in the same field</span>
                           <a class="openCvBtn" href="#!" onclick="showpor()">Send portfolio</a>
                       </div>
                       <div>
@@ -287,75 +287,76 @@
     </div>
     <!-- end tabs -->
     <!-- start por -->
-    <div class="openmodel" style="display: none">
-          <div class="apply3">
-            <div class="ui">
-              <div class="div">
-                <a href="#!" class="close-aplay2"><i class="fa fa-arrow-left"></i></a>
-                <h1 class="h-1">UI Designer</h1>
+    <div class="chang openmodel" style="display: none">
+          <div class="chang apply3">
+            <div class="chang ui">
+              <div class="chang div">
+                <a href="#!" class="chang close-aplay2"><i class="chang fa fa-arrow-left"></i></a>
+                <h1 class="chang h-1">UI Designer</h1>
               </div>
-              <div class="row test2">
-                <div class="col-4">
-                  <span class="one">Experience</span>
-                  <span class="two">+ 2 Years</span>
-                  <span class="one">Salary</span>
-                  <span class="two">450$ + Insurance</span>
+              <div class="chang row test2">
+                <div class="chang col-4">
+                  <span class="chang one" id="career_model_one1">Experience</span>
+                  <span class="chang two" id="career_model_two">+ 2 Years</span>
+                  <span class="chang one" id="career_model_three">Salary</span>
+                  <span class="chang two" id="career_model_four">450$ + Insurance</span>
                 </div>
-                <div class="col-4">
-                  <span class="one">Career Level</span>
-                  <span class="two">Entry Level</span>
-                  <span class="one">Vacancies</span>
-                  <span class="two">2 seats</span>
+                <div class="chang col-4">
+                  <span class="chang one" id="career_model_five">Career Level</span>
+                  <span class="chang two" id="career_model_six">Entry Level</span>
+                  <span class="chang one" id="career_model_seven">Vacancies</span>
+                  <span class="chang two" id="career_model_eight">2 seats</span>
                 </div>
-                <div class="col-4">
-                  <span class="one">Job Type</span>
-                  <span class="two">Full Time</span>
+                <div class="chang col-4">
+                  <span class="chang one" id="career_model_nine">Job Type</span>
+                  <span class="chang two" id="career_model_ten">Full Time</span>
                 </div>
               </div>
-              <div class="require">
-                <h3>Requirements</h3>
-                <p>Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet. Nunc congue ex vel nisl viverra, sit amet aliquet lectus ullamcorper.<br><br> Praesent luctus lacus non lorem elementum, eu tristique sapien suscipit. Sed bibendum, ipsum nec viverra malesuada, erat nisi sodales purus, eget hendrerit dui ligula eu enim. Ut non est nisi. Pellentesque tristique pretium dolor eu commodo. Proin iaculis nibh vitae lectus mollis bibendum.<br><br> Quisque varius eget urna sit amet luctus. Suspendisse potenti. Curabitur ac placerat est, sit amet sodales risus. Pellentesque viverra dui auctor, ullamcorper turpis pharetra, facilisis quam.</p>
+              <div class="chang require">
+                <h3 id="career_model_title_one">Requirements</h3>
+                <p id="career_model_dircation_one">Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet. Nunc congue ex vel nisl viverra, sit amet aliquet lectus ullamcorper.<br><br> Praesent luctus lacus non lorem elementum, eu tristique sapien suscipit. Sed bibendum, ipsum nec viverra malesuada, erat nisi sodales purus, eget hendrerit dui ligula eu enim. Ut non est nisi. Pellentesque tristique pretium dolor eu commodo. Proin iaculis nibh vitae lectus mollis bibendum.<br><br> Quisque varius eget urna sit amet luctus. Suspendisse potenti. Curabitur ac placerat est, sit amet sodales risus. Pellentesque viverra dui auctor, ullamcorper turpis pharetra, facilisis quam.</p>
               </div>
-              <div class="respon">
-                <h3>Responsibilities</h3>
-                <p class="p-2">In at iaculis lorem. Praesent tempor dictum tellus ut molestie. Sed sed ullamcorper lorem, id faucibus odio. Duis eu nisl ut ligula cursus molestie at at dolor. Nulla est justo, pellentesque vel lectus eget, fermentum varius dui. Morbi faucibus quam sed efficitur interdum. Suspendisse in pretium magna. Vivamus nec orci purus. Quisque accumsan dictum urna semper laoreet. Sed id rutrum tellus. In nisi sapien, sagittis faucibus tincidunt et, lacinia id felis. Ut tempor lectus porta, tempus orci ac, feugiat tellus. Suspendisse sagittis libero vitae metus sodales, id semper justo congue. Donec quam lorem, efficitur sit amet ex dapibus,</p>
+              <div class="chang respon">
+                <h3 id="career_model_title_two">Responsibilities</h3>
+                <p class="chang p-2" id="career_model_dircation_two">In at iaculis lorem. Praesent tempor dictum tellus ut molestie. Sed sed ullamcorper lorem, id faucibus odio. Duis eu nisl ut ligula cursus molestie at at dolor. Nulla est justo, pellentesque vel lectus eget, fermentum varius dui. Morbi faucibus quam sed efficitur interdum. Suspendisse in pretium magna. Vivamus nec orci purus. Quisque accumsan dictum urna semper laoreet. Sed id rutrum tellus. In nisi sapien, sagittis faucibus tincidunt et, lacinia id felis. Ut tempor lectus porta, tempus orci ac, feugiat tellus. Suspendisse sagittis libero vitae metus sodales, id semper justo congue. Donec quam lorem, efficitur sit amet ex dapibus,</p>
               </div>
             </div>
             <form method="GET">
               <div>
-                <h1>Join Our Crew Now</h1>
+                <h1 id="team_jion_title">Join Our Crew Now</h1>
               </div>
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input type="tel" name="Phone" placeholder="Your Phone" required />
+              <input type="text" id="footer_input_name" name="name" placeholder="Your Name" required />
+              <input type="tel" id="footer_input_Phone" name="Phone" placeholder="Your Phone" required />
               <input
                 type="email"
+                id="footer_input_Email"
                 name="email"
                 placeholder="Your Email"
                 required
               />
-              <input type="text" name="subject" placeholder="Subject" required />
-              <textarea rows="3" placeholder="Message"></textarea>
-              <div class="cloud">
+              <input type="text" id="team_cv_Subject" name="subject" placeholder="Subject" required />
+              <textarea rows="3" id="footer_input_message" placeholder="Message"></textarea>
+              <div class="chang cloud">
                 <img src="img/cloud_upload-24px.svg" />
-                <h3>Drag & Drop CV to upload or choose file</h3>
+                <h3 id="team_cv_drop_dircation">Drag & Drop CV to upload or choose file</h3>
               </div>
-              <input type="submit" value="Apply Now " class="send" />
+              <input type="submit" id="footer_input_send" value="Apply Now " class="chang send" />
             </form>
           </div>
     </div>
     <!-- end por -->
     <!-- start jion -->
-    <div class="jion">
-      <div class="container">
-        <div class="row revers">
-          <div class="col-lg-6 col-md-12">
-            <div class="group" data-aos="fade-up">
-              <h1>Join Our Crew</h1>
-              <p>Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis rutrum non risus in imperdiet. Proin molestie accumsan nulla sit amet</p>
-              <a class="openCvBtn" href="#!" id="openApplayForm">Send portfolio</a>
+    <div class="chang jion">
+      <div class="chang container">
+        <div class="chang row revers">
+          <div class="chang col-lg-6 col-md-12">
+            <div class="chang group" data-aos="fade-up">
+              <h1 id="team_jion_title1">Join Our Crew</h1>
+              <p id="team_jion_dircation">Duis vestibulum elit vel neque pharetra vulputate. Quisque scelerisque nisi urna. Duis rutrum non risus in imperdiet. Proin molestie accumsan nulla sit amet</p>
+              <a class="chang openCvBtn" href="#!" id="openApplayForm">Send portfolio</a>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12">
+          <div class="chang col-lg-6 col-md-12">
             <img src="img/20.png" data-aos="fade-up" data-aos-duration="10000">
           </div>
         </div>
@@ -363,23 +364,23 @@
     </div>
     <!-- end jion -->
     <!-- start cv -->
-    <div class="cv" style="display: none">
-        <div class="apply">
+    <div class="chang cv" style="display: none">
+        <div class="chang apply">
           <form method="GET">
             <div style="display: flex; align-items: center;">
-              <a href="#!" class="arrow"><i class="fa fa-arrow-left"></i></a>
-              <h1>Join Our Crew Now</h1>
+              <a href="#!" class="chang arrow"><i class="chang fa fa-arrow-left"></i></a>
+              <h1 id="team_cv_title">Join Our Crew Now</h1>
             </div>
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="tel" name="Phone" placeholder="Your Phone" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <input type="text" name="subject" placeholder="Subject" required />
-            <textarea rows="3" placeholder="Message"></textarea>
-            <div class="cloud">
+            <input type="text" id="footer_input_name2" name="name" placeholder="Your Name" required />
+            <input type="tel" id="footer_input_Phone2" name="Phone" placeholder="Your Phone" required />
+            <input type="email" id="footer_input_Email2" name="email" placeholder="Your Email" required />
+            <input type="text" id="team_cv_Subject1" name="subject2" placeholder="Subject" required />
+            <textarea rows="3" id="footer_input_message2" placeholder="Message"></textarea>
+            <div class="chang cloud">
               <img src="img/cloud_upload-24px.svg" />
-              <h3>Drag & Drop CV to upload or choose file</h3>
+              <h3 id="team_cv_drop_dircation1">Drag & Drop CV to upload or choose file</h3>
             </div>
-            <input type="submit" value="Apply Now " class="send" />
+            <input type="submit" id="footer_input_send2" value="Apply Now " class="chang send" />
           </form>
         </div>
         <!-- </div>
@@ -387,112 +388,156 @@
     </div>
     <!-- end cv -->
     <!-- start footer -->
-    <div class="footer" id="footer" data-aos="fade-up" data-aos-duration="2000">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="viewplus">
-                        <img src="img/logo-white.png" alt="">
-                        <p>Back in 2012 we had a vision, we had a dream of making the world a better place and give the world the exact solutions it needs so we put the first brick in view plus to make that vision clear and to fulfill that dream, view plus isn’t a company and not intend to be a one, view plus is simply a solution, and a smart one!</p>
-                    </div>
-                    <div class="follow">
-                        <h1>Follow Us</h1>
-                        <ul class="soical">
-                            <li>
-                                <a href="#!"><i class="fab fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-youtube"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-snapchat"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="links">
-                    <div class="row">
-                      <div class="col-6">
-                        <h1>Products</h1>
-                        <ul>
-                          <li><a href="#!">Smart Ads</a></li>
-                          <li><a href="#!">Evaluation</a></li>
-                          <li><a href="#!">Veyolo</a></li>
-                          <li><a href="#!">Inon</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-6">
-                        <h1>Sitemap</h1>
-                        <ul>
-                          <li><a href="home.html">Home</a></li>
-                          <li><a href="event.html">Event</a></li>
-                          <li><a href="team.html">Team</a></li>
-                          <li><a href="#">Career</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="find">
-                    <h1>Find Us</h1>
-                    <div>
-                      <h5>Riyadh Branch</h5>
-                      <ul>
-                        <li><i class="fa fa-map-marker color"></i>644 Haley Harbors, Corkeryview, HI, AE</li>
-                        <li><i class="fa fa-phone color"></i>(169)904-8990</li>
-                        <li><i class="fa fa-envelope color"></i>(169)904-8990</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h5>Jaddah Branch</h5>
-                      <ul>
-                        <li><i class="fa fa-map-marker color"></i>15047 Oswaldo Lights, East Eleonore, IN, LS</li>
-                        <li><i class="fa fa-phone color"></i>(169)904-8990</li>
-                        <li><i class="fa fa-envelope color"></i>(169)904-8990</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h5>Egypt Branch</h5>
-                      <ul>
-                        <li><i class="fa fa-map-marker color"></i>20952 Jerome Keys, New Sarinabury, MA, HN</li>
-                        <li><i class="fa fa-phone color"></i>(169)904-8990</li>
-                        <li><i class="fa fa-envelope color"></i>(169)904-8990</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 display">
-                  <div class="Instagram col-md-6">
-                    <h1>Instagram</h1>
-                    <div class="instagram-1"></div>
-                  </div>
-                  <div class="contact col-md-6">
-                    <form method="GET" class="col-xl-4 col-md-4 col-sm-12">
-                      <h1>Contact us</h1>
-                      <input type="text" name="name" placeholder=" Name" required />
-                      <input type="tel" name="Phone" placeholder=" Phone" required />
-                      <input type="email" name="email" placeholder=" Email" required/>
-                      <textarea rows="5" placeholder="message"></textarea>
-                      <input class="send" type="submit" value="send Message" />
-                    </form>
-                  </div>
-                </div>
+    <div class="chang footer">
+      <div class="chang container">
+        <div class="chang row">
+          <div class="chang col-lg-4 col-md-6 col-sm-12">
+            <div class="chang viewplus">
+              <img src="img/logo-white.png" alt="" />
+              <p id="footer_dircation">
+                Back in 2012 we had a vision, we had a dream of making the world
+                a better place and give the world the exact solutions it needs
+                so we put the first brick in view plus to make that vision clear
+                and to fulfill that dream, view plus isn’t a company and not
+                intend to be a one, view plus is simply a solution, and a smart
+                one!
+              </p>
             </div>
-        </div>
-        <div class="copy">
-              <div class="container">
-                <div class="row">
-                  <div class="col-6"><p>Privacy & Policy&nbsp; |&nbsp; Terms & Conditions</p></div>
-                  <div class="col-6"><p style="text-align: end;">Copyright ©2019 All rights reserved</p></div>
+            <div class="chang follow">
+              <h1 id="footer_follow_us">Follow Us</h1>
+              <ul class="chang soical">
+                <li>
+                  <a href="#!"><i class="chang fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="chang fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="chang fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="chang fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="chang fab fa-snapchat"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="chang col-lg-4 col-md-6 col-sm-12">
+            <div class="chang links">
+              <div class="chang row">
+                <div class="chang col-6">
+                  <h1 id="footer_product">Products</h1>
+                  <ul>
+                    <li><a href="#!">Smart Ads</a></li>
+                    <li><a href="#!">Evaluation</a></li>
+                    <li><a href="#!">Veyolo</a></li>
+                    <li><a href="#!">Inon</a></li>
+                  </ul>
+                </div>
+                <div class="chang col-6">
+                  <h1 id="footer_Sitemap">Sitemap</h1>
+                  <ul>
+                    <li><a href="home.html" id="home1">Home</a></li>
+                    <li><a href="event.html" id="Event1">Event</a></li>
+                    <li><a href="team.html" id="team1">Team</a></li>
+                    <li><a href="#" id="career1">Career</a></li>
+                  </ul>
                 </div>
               </div>
+            </div>
+            <div class="chang find">
+              <h1 id="footer_find">Find Us</h1>
+              <div>
+                <h5 id="footer_find_riyadh">Riyadh Branch</h5>
+                <ul>
+                  <li>
+                    <i class="chang fa fa-map-marker color" id="footer_find_riyadh_title"></i>644 Haley
+                    Harbors, Corkeryview, HI, AE
+                  </li>
+                  <li>
+                    <i class="chang fa fa-phone color"></i>(169)904-8990
+                  </li>
+                  <li>
+                    <i class="chang fa fa-envelope color"></i>(169)904-8990
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h5 id="footer_find_Jaddah">Jaddah Branch</h5>
+                <ul>
+                  <li>
+                    <i class="chang fa fa-map-marker color" id="footer_find_Jaddah_title"></i>15047
+                    Oswaldo Lights, East Eleonore, IN, LS
+                  </li>
+                  <li>
+                    <i class="chang fa fa-phone color"></i>(169)904-8990
+                  </li>
+                  <li>
+                    <i class="chang fa fa-envelope color"></i>(169)904-8990
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h5 id="footer_find_Egypt">Egypt Branch</h5>
+                <ul>
+                  <li>
+                    <i class="chang fa fa-map-marker color" id="footer_find_Egypt_title"></i>20952 Jerome
+                    Keys, New Sarinabury, MA, HN
+                  </li>
+                  <li>
+                    <i class="chang fa fa-phone color"></i>(169)904-8990
+                  </li>
+                  <li>
+                    <i class="chang fa fa-envelope color"></i>(169)904-8990
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="chang col-lg-4 col-md-12 col-sm-12 display">
+            <div class="chang Instagram col-md-6">
+              <h1 id="footer_Instagram">Instagram</h1>
+              <div class="chang instagram-1"></div>
+            </div>
+            <div class="chang contact col-md-6">
+              <form method="GET" class="chang col-xl-4 col-md-4 col-sm-12">
+                <h1 id="footer_Contact">Contact us</h1>
+                <input type="text" id="footer_input_name1" name="name" placeholder=" Name" required />
+                <input type="tel" name="Phone" placeholder=" Phone" id="footer_input_Phone1" required />
+                <input
+                  type="email"
+                  name="email"
+                  id="footer_input_Email1"
+                  placeholder=" Email"
+                  required
+                />
+                <textarea rows="5" id="footer_input_message1" placeholder="message"></textarea>
+                <input
+                  class="chang send"
+                  id="footer_input_send1"
+                  type="submit"
+                  value="send Message"
+                  
+                />
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="chang copy">
+        <div class="chang container">
+          <div class="chang row">
+            <div class="chang col-6">
+              <p id="footer_copy_one">Privacy & Policy&nbsp; |&nbsp; Terms & Conditions</p>
+            </div>
+            <div class="chang col-6">
+              <p style="text-align: end" id="footer_copy_two">Copyright ©2019 All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- end footer -->
 

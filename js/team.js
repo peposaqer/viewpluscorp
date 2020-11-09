@@ -88,3 +88,133 @@ $(document).ready(function () {
     anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
   });
 });
+
+// Change Languages
+var language;
+// check langauge on loading page
+function loadLang() {
+  let lang_shor_name = localStorage.getItem("language");
+  if (lang_shor_name === "ar") {
+    arabicLang();
+  } else {
+    englishLang();
+  }
+}
+// get Language
+function getLanguage() {
+  localStorage.getItem("language") == null ? setLanguage("en") : false;
+  $.ajax({
+    url: "language/" + localStorage.getItem("language") + ".json",
+    dataType: "json",
+    async: false,
+    dataType: "json",
+    success: function (lang) {
+      language = lang;
+    },
+  });
+}
+// set Language
+function setLanguage(lang) {
+  localStorage.setItem("language", lang);
+}
+// change to English
+$(".en").on('click', englishLang);
+// change to Arabic
+$(".arbic").on("click", arabicLang);
+
+function arabicLang() {
+  console.log($(".chang"))
+  $(".chang").addClass("right-dir");
+  getLanguage();
+  $("#home").text(language.home);
+  $("#Event").text(language.Event);
+  $("#team").text(language.team);
+  $("#Career").text(language.Career);
+  $("#team_slider_dircation").text(language.team_slider_dircation);
+  $("#team_jion_title").text(language.team_jion_title);
+  $("#team_jion_dircation").text(language.team_jion_dircation);
+  $("#openApplayForm").text(language.openApplayForm);
+  $("#team_cv_title").text(language.team_cv_title);
+  $("#footer_input_name").attr("placeholder", language.footer_input_name);
+  $("#footer_input_Email").attr("placeholder", language.footer_input_Email);
+  $("#footer_input_send").attr("placeholder", language.footer_input_send);
+  $("#footer_input_message").attr("placeholder", language.footer_input_message);
+  $("#footer_input_Phone").attr("placeholder", language.footer_input_Phone);
+  $("#footer_input_send").attr("value", language.footer_input_send);
+  $("#footer_input_name1").attr("placeholder", language.footer_input_name);
+  $("#footer_input_Email1").attr("placeholder", language.footer_input_Email1);
+  $("#footer_input_send1").attr("placeholder", language.footer_input_send);
+  $("#footer_input_message1").attr(
+    "placeholder",
+    language.footer_input_message
+  );
+  $("#footer_input_Phone1").attr("placeholder", language.footer_input_Phone);
+  $("#footer_input_send1").attr("value", language.footer_input_send);
+  $("#team_cv_Subject").attr("placeholder", language.team_cv_Subject);
+  $("#team_cv_drop_dircation").text(language.team_cv_drop_dircation);
+  $("#footer_find").text(language.footer_find);
+  $("#footer_find_riyadh").text(language.footer_find_riyadh);
+  $("#footer_find_Jaddah").text(language.footer_find_Jaddah);
+  $("#footer_find_Egypt").text(language.footer_find_Egypt);
+  $("#footer_dircation").text(language.footer_dircation);
+  $("#footer_follow_us").text(language.footer_follow_us);
+  $("#footer_product").text(language.footer_product);
+  $("#footer_Sitemap").text(language.footer_Sitemap);
+  $("#footer_Instagram").text(language.footer_Instagram);
+  $("#footer_Contact").text(language.footer_Contact);
+  $("#footer_copy_one").text(language.footer_copy_one);
+  $("#footer_copy_two").text(language.footer_copy_two);
+  $("#home1").text(language.home1);
+  $("#Event1").text(language.Event1);
+  $("#team1").text(language.team1);
+  $("#career1").text(language.career1);
+}
+
+function englishLang() {
+  $(".chang").removeClass("right-dir");
+  getLanguage();
+  $("#home").text(language.home);
+  $("#Event").text(language.Event);
+  $("#team").text(language.team);
+  $("#Career").text(language.Career);
+  $("#team_slider_dircation").text(language.team_slider_dircation);
+  $("#team_jion_title").text(language.team_jion_title);
+  $("#team_jion_dircation").text(language.team_jion_dircation);
+  $("#openApplayForm").text(language.openApplayForm);
+  $("#team_cv_title").text(language.team_cv_title);
+  $("#team_cv_title").text(language.team_cv_title);
+  $("#footer_dircation").text(language.footer_dircation);
+  $("#team_cv_drop_dircation").text(language.team_cv_drop_dircation);
+  $("#footer_input_name").attr("placeholder", language.footer_input_name);
+  $("#footer_input_Email1").attr("placeholder", language.footer_input_Email1);
+  $("#footer_input_send").attr("placeholder", language.footer_input_send);
+  $("#footer_input_message").attr("placeholder", language.footer_input_message);
+  $("#footer_input_Phone").attr("placeholder", language.footer_input_Phone);
+  $("#footer_input_send").attr("value", language.footer_input_send);
+  $("#footer_input_name1").attr("placeholder", language.footer_input_name);
+  $("#footer_input_Email").attr("placeholder", language.footer_input_Email);
+  $("#footer_input_send1").attr("placeholder", language.footer_input_send);
+  $("#footer_input_message1").attr(
+    "placeholder",
+    language.footer_input_message
+  );
+  $("#footer_input_Phone1").attr("placeholder", language.footer_input_Phone);
+  $("#footer_input_send1").attr("value", language.footer_input_send);
+  $("#team_cv_Subject").attr("placeholder", language.team_cv_Subject);
+  $("#team_cv_Subject").text(language.team_cv_Subject);
+  $("#footer_follow_us").text(language.footer_follow_us);
+  $("#footer_find").text(language.footer_find);
+  $("#footer_find_riyadh").text(language.footer_find_riyadh);
+  $("#footer_find_Jaddah").text(language.footer_find_Jaddah);
+  $("#footer_find_Egypt").text(language.footer_find_Egypt);
+  $("#footer_product").text(language.footer_product);
+  $("#footer_Sitemap").text(language.footer_Sitemap);
+  $("#footer_Instagram").text(language.footer_Instagram);
+  $("#footer_Contact").text(language.footer_Contact);
+  $("#footer_copy_one").text(language.footer_copy_one);
+  $("#footer_copy_two").text(language.footer_copy_two);
+  $("#home1").text(language.home1);
+  $("#Event1").text(language.Event1);
+  $("#team1").text(language.team1);
+  $("#career1").text(language.career1);
+}

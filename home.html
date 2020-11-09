@@ -4,21 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ViewPlus | Home</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/utlilty.css" />
     <link rel="stylesheet" href="css/home.css" />
   </head>
-  <body>
+  <body id="top" onload="loadLang()">
     <!-- start nav -->
     <nav class="">
       <div class="container">
@@ -131,15 +160,15 @@
                 style="width: 55px; height: 55px"
             /></a>
           </li>
-          <li><a class="active" href="home.html">Home </a></li>
-          <li><a href="event.html">event</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="career.html">Career</a></li>
+          <li><a class="active" href="home.html" id="home">Home </a></li>
+          <li><a href="event.html" id="Event">event</a></li>
+          <li><a href="team.html" id="team">Team</a></li>
+          <li><a href="career.html" id="Career">Career</a></li>
           <li>
             <div class="di">
-              <a href="" class="en">En</a>
+              <a href="#" class="en" onclick="setLanguage('en')">En</a>
               <span class="spa">|</span>
-              <a href="" class="en">العربيه</a>
+              <a href="#" class="arbic" onclick="setLanguage('ar')">العربيه</a>
             </div>
           </li>
         </ul>
@@ -147,49 +176,55 @@
     </nav>
     <!-- end nav -->
     <!-- end nav -->
-    <div class="header">
-        <div class="hero-img">
-          <p>
-            Back in 2012 we had a vision, we had a dream of making the world a
-            better place and give the world the exact solutions it needs, so we
-            put the first brick in view plus to make that vision clear and to
-            fulfill that dream, view plus isn’t a company and we do not intend to
-            be a one, view plus is simply a solution, and a smart one!
-          </p>
-          <a href="#myButton" class="showmore" onclick="focusScrollMethod()">Read More</a>
-        </div>
-        <div class="rellax parallax" data-rellax-speed="10"></div>
+    <div class="chang header">
+      <div class="chang hero-img">
+        <p id="header_dircation">
+          Back in 2012 we had a vision, we had a dream of making the world a
+          better place and give the world the exact solutions it needs, so we
+          put the first brick in view plus to make that vision clear and to
+          fulfill that dream, view plus isn’t a company and we do not intend to
+          be a one, view plus is simply a solution, and a smart one!
+        </p>
+        <a
+          href="#myButton"
+          class="chang showmore"
+          onclick="focusScrollMethod()"
+          id="header_button"
+          >Read More</a
+        >
+      </div>
+      <div class="chang rellax parallax" data-rellax-speed="10"></div>
     </div>
     <!-- end header -->
     <!-- start hidden -->
-    <div class="read hidden" data-aos="fade-up" data-aos-duration="5000" id="myButton">
-      <div class="ead">
-        <div class="container">
-          <div class="row porta">
-            <div class="col-5">
+    <div class="chang read hidden" data-aos="fade-up" data-aos-duration="5000" id="myButton">
+      <div class="chang ead">
+        <div class="chang container">
+          <div class="chang row porta">
+            <div class="chang col-5">
               <img src="/img/readmore.png" />
             </div>
-            <div class="col-7">
-              <div class="rea">
-                <h1>Our Vision</h1>
-                <p>
+            <div class="chang col-7">
+              <div class="chang rea">
+                <h1 id="Vision_title">Our Vision</h1>
+                <p id="Vision_dircation">
                   We had a dream and with wisdom and knowlage we made it very
                   clear, we want to make a change, We want a better life cycle
                   not only for companies but also for humans, And we know
                   excatly how we do that.
                 </p>
               </div>
-              <div class="rea">
-                <h1>Our Mission</h1>
-                <p>
-                  Everyone has a certain mission that they are called to
-                  fulfil, And we had our call, We are here not for just making
-                  a change, But, we are here to inspire, to help, to solve,
-                  Thats our code and as told before "we are not a company and
-                  we do not intend to be a one", We are View Plus.
+              <div class="chang rea">
+                <h1 id="Mission_title">Our Mission</h1>
+                <p  id="Mission_dircation">
+                  Everyone has a certain mission that they are called to fulfil,
+                  And we had our call, We are here not for just making a change,
+                  But, we are here to inspire, to help, to solve, Thats our code
+                  and as told before "we are not a company and we do not intend
+                  to be a one", We are View Plus.
                 </p>
               </div>
-              <a href="#" class="less">Read Less</a>
+              <a href="#" class="chang less" id="Mission_button">Read Less</a>
             </div>
           </div>
         </div>
@@ -197,35 +232,48 @@
     </div>
     <!-- end hidden -->
     <!-- start smart -->
-    <div class="smart side-menu" id="smart">    
-      <div class="container">
-        <div class="row">
-          <img src="img/megaphone.svg" class="mage">
-          <div class="col-lg-1 col-md-12 saqer">
-            <div class="side--menu ">
-              <ul id="smart-nav" class="tot side-menu-section">
-                <li class="nav-item btn"><a href="#inon">Inon</a></li>
-                <li class="nav-item btn"><a href="#Veyolo">Velyolo</a></li>
-                <li class="nav-item btn"><a href="#Evaluation">Evaluation</a></li>
-                <li class="nav-item btn"><a class="link-active">Smart ads</a></li>
+    <div class="chang smart side-menu" id="smart">
+      <div class="chang container">
+        <div class="chang row">
+          <img src="img/megaphone.svg" class="chang mage" />
+          <div class="chang col-lg-1 col-md-12 saqer">
+            <div class="chang side--menu">
+              <ul id="smart-nav" class="chang tot side-menu-section">
+                <li class="chang nav-item btn"><a href="#inon">Inon</a></li>
+                <li class="chang nav-item btn">
+                  <a href="#Veyolo">Velyolo</a>
+                </li>
+                <li class="chang nav-item btn">
+                  <a href="#Evaluation">Evaluation</a>
+                </li>
+                <li class="chang nav-item btn">
+                  <a class="chang link-active">Smart ads</a>
+                </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-11 col-md-12 group">
-            <div class="col-lg-6 col-md-12 col-sm-12 saqer-1">
+          <div class="chang col-lg-11 col-md-12 group">
+            <div class="chang col-lg-6 col-md-12 col-sm-12 saqer-1">
               <span>Smart Ads</span>
-              <h1>Quis porta</h1>
-              <p>Duis vestibulum elit vel neque pharetra vulputate. Quisque
-                scelerisque nisi urna. Duis rutrum non risus in imperdiet. Proin
-                molestie accumsan nulla sit amet mattis. Ut vel tristique neque.
-                Praesent purus eros, aliquet sit amet venenatis in, sodales in
-                odio. Curabitur ac ligula et purus </p>
-                <a href="#!" class="visit">Visit Website</a>
+              <h1 id="smart_title">Quis porta</h1>
+              <p id="smart_dircation">
+                Educational and Awareness, Designed to target the most prevalent groups in different regions of the Kingdom of Saudi Arabia, Through installing tablets at waiting areas such as (Hospitals, Clinics, Beauty salons, Hotels and Sports clubs).
+              </p>
+              <a href="#!" class="chang visit" id="smart_button">Visit Website</a>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 smart-contener-img">
-            <img src="img/tablet-back@2x.png" class="smart-img-back">
-            <img src="img/101.png" class="smart-img-front" data-aos="fade-up"
-                  data-aos-duration="1000">
+            <div
+              class="chang col-lg-6 col-md-12 col-sm-12 smart-contener-img"
+            >
+              <img
+                src="img/tablet-back@2x.png"
+                class="chang smart-img-back"
+              />
+              <img
+                src="img/101.png"
+                class="chang smart-img-front"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              />
             </div>
           </div>
         </div>
@@ -233,30 +281,43 @@
     </div>
     <!-- end smart -->
     <!-- start Evaluation -->
-    <div class="Evaluation side-menu" id="Evaluation">
-      <div class="container">
-        <div class="row">
-          <img src="img/evaluation.svg" class="mage" />
-          <div class="col-lg-1 col-md-12 saqer">
-            <div class="side--menu ">
-              <ul id="Evaluation-nav" class="tot side-menu-section">
-                <li class="nav-item btn"><a href="#inon">Inon</a></li>
-                <li class="nav-item btn"><a href="#Veyolo">Velyolo</a></li>
-                <li class="nav-item btn"><a class="link-active" href="#Evaluation">Evaluation</a></li>
-                <li class="nav-item btn"><a href="#smart">Smart ads</a></li>
+    <div class="chang Evaluation side-menu" id="Evaluation">
+      <div class="chang container">
+        <div class="chang row">
+          <img src="img/evaluation.svg" class="chang mage" />
+          <div class="chang col-lg-1 col-md-12 saqer">
+            <div class="chang side--menu">
+              <ul id="Evaluation-nav" class="chang tot side-menu-section">
+                <li class="chang nav-item btn"><a href="#inon">Inon</a></li>
+                <li class="chang nav-item btn">
+                  <a href="#Veyolo">Velyolo</a>
+                </li>
+                <li class="chang nav-item btn">
+                  <a class="chang link-active" href="#Evaluation"
+                    >Evaluation</a
+                  >
+                </li>
+                <li class="chang nav-item btn">
+                  <a href="#smart">Smart ads</a>
+                </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-11 col-md-12 col-sm-12 group">
-            <div class="col-lg-6 col-md-12 saqer-1 ">
+          <div class="chang col-lg-11 col-md-12 col-sm-12 group">
+            <div class="chang col-lg-6 col-md-12 saqer-1">
               <span>Evaluation</span>
-              <h1>Morbi laoreet</h1>
-              <p>Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida.</p>
-              <a href="#!" class="visit">Visit Website</a>
+              <h1 id="Evaluation_title">Morbi laoreet</h1>
+              <p id="Evaluation_dircation">
+                Our Emojis expressions are easy to use and easy to enable the customer to send his voice directly to the decision-makers without any hindrance and the ease of collecting their customer data. It makes it very easy to follow and analyze comments, as it enables you to save time and energy to focus on making customer opinions better.
+              </p>
+              <a href="#!" class="chang visit" id="Evaluation_button">Visit Website</a>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12" data-aos="zoom-in-left">
-              <div class="tab">
-                <img src="img/70.png" class="evaluatuin-img-tab1">
+            <div
+              class="chang col-lg-6 col-md-12 col-sm-12"
+              data-aos="zoom-in-left"
+            >
+              <div class="chang tab">
+                <img src="img/70.png" class="chang evaluatuin-img-tab1" />
               </div>
             </div>
           </div>
@@ -265,28 +326,36 @@
     </div>
     <!-- end Evaluation -->
     <!-- start Veyolo -->
-    <div class="Veyolo side-menu" id="Veyolo">
-      <div class="container">
-        <div class="row gro">
-          <div class="col-lg-1 col-md-12 saqer">
-            <div class="side--menu ">
-              <ul id="Veyolo-nav" class="tot side-menu-section">
-                <li class="nav-item btn"><a href="#inon">Inon</a></li>
-                <li class="nav-item btn"><a class="link-active" href="#Veyolo">Velyolo</a></li>
-                <li class="nav-item btn"><a href="#Evaluation">Evaluation</a></li>
-                <li class="nav-item btn"><a href="#smart">Smart ads</a></li>
+    <div class="chang Veyolo side-menu" id="Veyolo">
+      <div class="chang container">
+        <div class="chang row gro">
+          <div class="chang col-lg-1 col-md-12 saqer">
+            <div class="chang side--menu">
+              <ul id="Veyolo-nav" class="chang tot side-menu-section">
+                <li class="chang nav-item btn"><a href="#inon">Inon</a></li>
+                <li class="chang nav-item btn">
+                  <a class="chang link-active" href="#Veyolo">Velyolo</a>
+                </li>
+                <li class="chang nav-item btn">
+                  <a href="#Evaluation">Evaluation</a>
+                </li>
+                <li class="chang nav-item btn">
+                  <a href="#smart">Smart ads</a>
+                </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-11 col-md-12 col-md-12 group">
-            <div class="col-lg-6 col-md-12 saqer-1">
+          <div class="chang col-lg-11 col-md-12 col-md-12 group">
+            <div class="chang col-lg-6 col-md-12 saqer-1">
               <span>Veyolo</span>
-              <h1>Nulla viverra</h1>
-              <p>Curabitur vulputate arcu odio, ac facilisis diam accumsan ut. Ut imperdiet et leo in vulputate. Sed eleifend lacus eu sapien sagittis imperdiet. Etiam, hendrerit dui. Pellentesque auctor id enim sit amet molestie.</p>
+              <h1 id="Veyolo_title">Nulla viverra</h1>
+              <p id="Veyolo_dircation"> 
+                An application specially designed to help the owners of trucks and rent cars to organize all financial transactions and the entire rental process that takes place between the tenant and the tenant from him
+              </p>
             </div>
-            <div class="col-lg-6 col-md-12 veyolo-img">
-              <div class="border" data-aos="fade-up"></div>
-              <img src="img/veyolo-pic.png" data-aos="fade-left">
+            <div class="chang col-lg-6 col-md-12 veyolo-img">
+              <div class="chang border" data-aos="fade-up"></div>
+              <img src="img/veyolo-pic.png" data-aos="fade-left" />
             </div>
           </div>
         </div>
@@ -294,22 +363,32 @@
     </div>
     <!-- end Veyolo -->
     <!-- start inon -->
-    <div class="inon side-menu" id="inon">
-      <div class="container">
-        <div class="row">
-          <div class="side--menu col-lg-1.5">
-              <ul id="inon-nav" class="tot side-menu-section">
-                <li class="nav-item btn"><a class="link-active" href="#inon">Inon</a></li>
-                <li class="nav-item btn"><a href="#Veyolo">Velyolo</a></li>
-                <li class="nav-item btn"><a href="#Evaluation">Evaluation</a></li>
-                <li class="nav-item btn"><a href="#smart">Smart ads</a></li>
-              </ul>
+    <div class="chang inon side-menu" id="inon">
+      <div class="chang container">
+        <div class="chang row">
+          <div class="chang side--menu col-lg-1.5">
+            <ul id="inon-nav" class="chang tot side-menu-section">
+              <li class="chang nav-item btn">
+                <a class="chang link-active" href="#inon">Inon</a>
+              </li>
+              <li class="chang nav-item btn">
+                <a href="#Veyolo">Velyolo</a>
+              </li>
+              <li class="chang nav-item btn">
+                <a href="#Evaluation">Evaluation</a>
+              </li>
+              <li class="chang nav-item btn">
+                <a href="#smart">Smart ads</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-lg-9 group">
-          <span>INON</span>
-          <h1>Morbi porta</h1>
-          <p>Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet. Nunc congue ex vel nisl viverra, sit amet aliquet lectus ullamcorper.</p>
-          <a href="#!" class="visit">Visit Website</a>
+          <div class="chang col-lg-9 group">
+            <span>INON</span>
+            <h1 id="inon_title">Morbi porta</h1>
+            <p id="inon_dircation"> 
+              Curabitur vulputate arcu odio, ac facilisis diam accumsan ut. Ut imperdiet et leo in vulputate. Sed eleifend lacus eu sapien sagittis imperdiet. Etiam, hendrerit dui. Pellentesque auctor id enim sit amet molestie.
+            </p>
+            <a href="#!" class="chang visit" id="inon_button">Visit Website</a>
           </div>
         </div>
       </div>
@@ -318,147 +397,188 @@
     <!-- start partner -->
     <div class="Partners">
       <div class="container">
-        <div class="row revers">
-          <div class="col-lg-6 col-md-12">
-            <h1>Partners</h1>
-            <p>Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet. Nunc congue ex vel nisl viverra, sit amet aliquet lectus ullamcorper.</p>
+        <div class="chang row revers">
+          <div class="chang col-lg-6 col-md-12">
+            <h1 id="partner_title">Partners</h1>
+            <p id="partner_dircation">
+              Unity is strength, when there is collaborations, Wonderful things can be achieved.
+            </p>
           </div>
-          <div class="col-lg-6 col-md-12 text">
-            <img src="img/2099.png" data-aos="fade-down" class="hand">
+          <div class="chang col-lg-6 col-md-12 text">
+            <img
+              src="img/2099.png"
+              data-aos="fade-down"
+              class="chang hand"
+            />
           </div>
         </div>
         <section class="customer-logos slider row">
-            <div class="slide"><img src="img/logo1.svg" /></div>
-            <div class="slide"><img src="img/logo2.svg" /></div>
-            <div class="slide"><img src="img/logo-3-color.svg" /></div>
-            <div class="slide"><img src="img/logo4.svg" /></div>
-            <div class="slide"><img src="img/logo5.svg" /></div>
-            <div class="slide"><img src="img/logo6.svg" /></div>
-            <div class="slide"><img src="img/logo-3-color.svg" /></div>
+          <div class="slide"><img src="img/logo1.svg" /></div>
+          <div class="slide"><img src="img/logo2.svg" /></div>
+          <div class="slide"><img src="img/logo-3-color.svg" /></div>
+          <div class="slide"><img src="img/logo4.svg" /></div>
+          <div class="slide"><img src="img/logo5.svg" /></div>
+          <div class="slide"><img src="img/logo6.svg" /></div>
+          <div class="slide"><img src="img/logo-3-color.svg" /></div>
         </section>
       </div>
     </div>
     <!-- end partner -->
     <!-- start footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="viewplus">
-                        <img src="img/logo-white.png" alt="">
-                        <p>Back in 2012 we had a vision, we had a dream of making the world a better place and give the world the exact solutions it needs so we put the first brick in view plus to make that vision clear and to fulfill that dream, view plus isn’t a company and not intend to be a one, view plus is simply a solution, and a smart one!</p>
-                    </div>
-                    <div class="follow">
-                        <h1>Follow Us</h1>
-                        <ul class="soical">
-                            <li>
-                                <a href="#!"><i class="fab fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-youtube"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-snapchat"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="links">
-                    <div class="row">
-                      <div class="col-6">
-                        <h1>Products</h1>
-                        <ul>
-                          <li><a href="#!">Smart Ads</a></li>
-                          <li><a href="#!">Evaluation</a></li>
-                          <li><a href="#!">Veyolo</a></li>
-                          <li><a href="#!">Inon</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-6">
-                        <h1>Sitemap</h1>
-                        <ul>
-                          <li><a href="#">Home</a></li>
-                          <li><a href="event.html">Event</a></li>
-                          <li><a href="team.html">Team</a></li>
-                          <li><a href="career.html">Career</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="find">
-                    <h1>Find Us</h1>
-                    <div>
-                      <h5>Riyadh Branch</h5>
-                      <ul>
-                        <li><i class="fa fa-map-marker color"></i>644 Haley Harbors, Corkeryview, HI, AE</li>
-                        <li><i class="fa fa-phone color"></i>(169)904-8990</li>
-                        <li><i class="fa fa-envelope color"></i>(169)904-8990</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h5>Jaddah Branch</h5>
-                      <ul>
-                        <li><i class="fa fa-map-marker color"></i>15047 Oswaldo Lights, East Eleonore, IN, LS</li>
-                        <li><i class="fa fa-phone color"></i>(169)904-8990</li>
-                        <li><i class="fa fa-envelope color"></i>(169)904-8990</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h5>Egypt Branch</h5>
-                      <ul>
-                        <li><i class="fa fa-map-marker color"></i>20952 Jerome Keys, New Sarinabury, MA, HN</li>
-                        <li><i class="fa fa-phone color"></i>(169)904-8990</li>
-                        <li><i class="fa fa-envelope color"></i>(169)904-8990</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 display">
-                  <div class="Instagram col-md-6">
-                    <h1>Instagram</h1>
-                    <div class="instagram-1"></div>
-                  </div>
-                  <div class="contact col-md-6">
-                    <form method="GET" class="col-xl-4 col-md-4 col-sm-12">
-                      <h1>Contact us</h1>
-                      <input type="text" name="name" placeholder=" Name" required />
-                      <input type="tel" name="Phone" placeholder=" Phone" required />
-                      <input type="email" name="email" placeholder=" Email" required/>
-                      <textarea rows="5" placeholder="message"></textarea>
-                      <input class="send" type="submit" value="send Message" />
-                    </form>
-                  </div>
-                </div>
+    <div class="chang footer">
+      <div class="chang container">
+        <div class="chang row">
+          <div class="chang col-lg-4 col-md-6 col-sm-12">
+            <div class="chang viewplus">
+              <img src="img/logo-white.png" alt="" />
+              <p id="footer_dircation">
+                Back in 2012 we had a vision, we had a dream of making the world
+                a better place and give the world the exact solutions it needs
+                so we put the first brick in view plus to make that vision clear
+                and to fulfill that dream, view plus isn’t a company and not
+                intend to be a one, view plus is simply a solution, and a smart
+                one!
+              </p>
             </div>
-        </div>
-        <div class="copy">
-              <div class="container">
-                <div class="row">
-                  <div class="col-6"><p>Privacy & Policy&nbsp; |&nbsp; Terms & Conditions</p></div>
-                  <div class="col-6"><p style="text-align: end;">Copyright ©2019 All rights reserved</p></div>
+            <div class="chang follow">
+              <h1 id="footer_follow_us">Follow Us</h1>
+              <ul class="chang soical">
+                <li>
+                  <a href="#!"><i class="chang fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="chang fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="chang fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="chang fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="chang fab fa-snapchat"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="chang col-lg-4 col-md-6 col-sm-12">
+            <div class="chang links">
+              <div class="chang row">
+                <div class="chang col-6">
+                  <h1 id="footer_product">Products</h1>
+                  <ul>
+                    <li><a href="#!">Smart Ads</a></li>
+                    <li><a href="#!">Evaluation</a></li>
+                    <li><a href="#!">Veyolo</a></li>
+                    <li><a href="#!">Inon</a></li>
+                  </ul>
+                </div>
+                <div class="chang col-6">
+                  <h1 id="footer_Sitemap">Sitemap</h1>
+                  <ul>
+                    <li><a href="#" id="home1">Home</a></li>
+                    <li><a href="event.html" id="Event1">Event</a></li>
+                    <li><a href="team.html" id="team1">Team</a></li>
+                    <li><a href="career.html" id="career1">Career</a></li>
+                  </ul>
                 </div>
               </div>
+            </div>
+            <div class="chang find">
+              <h1 id="footer_find">Find Us</h1>
+              <div>
+                <h5 id="footer_find_riyadh">Riyadh Branch</h5>
+                <ul>
+                  <li>
+                    <i class="chang fa fa-map-marker color" id="footer_find_riyadh_title"></i>644 Haley
+                    Harbors, Corkeryview, HI, AE
+                  </li>
+                  <li>
+                    <i class="chang fa fa-phone color"></i>(169)904-8990
+                  </li>
+                  <li>
+                    <i class="chang fa fa-envelope color"></i>(169)904-8990
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h5 id="footer_find_Jaddah">Jaddah Branch</h5>
+                <ul>
+                  <li>
+                    <i class="chang fa fa-map-marker color" id="footer_find_Jaddah_title"></i>15047
+                    Oswaldo Lights, East Eleonore, IN, LS
+                  </li>
+                  <li>
+                    <i class="chang fa fa-phone color"></i>(169)904-8990
+                  </li>
+                  <li>
+                    <i class="chang fa fa-envelope color"></i>(169)904-8990
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h5 id="footer_find_Egypt">Egypt Branch</h5>
+                <ul>
+                  <li>
+                    <i class="chang fa fa-map-marker color"></i><span id="footer_find_Egypt_title">20952 Jerome Keys, New Sarinabury, MA, HN</span>
+                  </li>
+                  <li>
+                    <i class="chang fa fa-phone color"></i>(169)904-8990
+                  </li>
+                  <li>
+                    <i class="chang fa fa-envelope color"></i>(169)904-8990
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="chang col-lg-4 col-md-12 col-sm-12 display">
+            <div class="chang Instagram col-md-6">
+              <h1 id="footer_Instagram">Instagram</h1>
+              <div class="chang instagram-1"></div>
+            </div>
+            <div class="chang contact col-md-6">
+              <form method="GET" class="chang col-xl-4 col-md-4 col-sm-12">
+                <h1 id="footer_Contact">Contact us</h1>
+                <input type="text" id="footer_input_name" name="name" placeholder=" Name" required />
+                <input type="tel" name="Phone" placeholder=" Phone" id="footer_input_Phone" required />
+                <input
+                  type="email"
+                  name="email"
+                  id="footer_input_Email"
+                  placeholder=" Email"
+                  required
+                />
+                <textarea rows="5" id="footer_input_message" placeholder="message"></textarea>
+                <input
+                  class="chang send"
+                  id="footer_input_send"
+                  type="submit"
+                  value="send Message"
+                  
+                />
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="chang copy">
+        <div class="chang container">
+          <div class="chang row">
+            <div class="chang col-6">
+              <p id="footer_copy_one">Privacy & Policy&nbsp; |&nbsp; Terms & Conditions</p>
+            </div>
+            <div class="chang col-6">
+              <p style="text-align: end" id="footer_copy_two">Copyright ©2019 All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- end footer -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/home.js"></script>
