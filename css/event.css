@@ -216,6 +216,16 @@ left: 8rem;
 .event .group {
 margin-top: 0rem;
 }
+
+
+  .gallery-thumbs {
+    display: none;
+  }
+
+  .gallery-top {
+    height: 95vh;
+  }
+
 .Lobortis {
     height: 100%;
 }
@@ -276,6 +286,14 @@ margin-top: 0rem;
 
   .event .group {
     margin-top: 0rem;
+  }
+
+  .gallery-thumbs {
+    display: none;
+  }
+
+  .gallery-top {
+    height: 95vh;
   }
 
   
