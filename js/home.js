@@ -33,9 +33,13 @@ $(".customer-logos").slick({
   ],
 });
 
-  $(window).bind("load", function () {
-    $("#work-in-progress").fadeOut(100);
-  });
+// $(window).bind("load", function () {
+//   $("#work-in-progress").fadeOut(100);
+// });
+
+function dismissProgress() {
+  $("#work-in-progress").fadeOut(100);
+}
 
 // Animation on Scroll
 $(document).ready(function () {
@@ -153,12 +157,11 @@ function setLanguage(lang) {
   localStorage.setItem("language", lang);
 }
 // change to English
-$(".en").on('click', englishLang);
+$(".en").on("click", englishLang);
 // change to Arabic
 $(".arbic").on("click", arabicLang);
 
 function arabicLang() {
-  console.log($(".chang"))
   $(".chang").addClass("right-dir");
   getLanguage();
   $("#header_dircation").text(language.header_dircation);
@@ -242,6 +245,9 @@ function arabicLang() {
 
   document.querySelector("style").textContent +=
     "@media screen and (min-width:1440px) { .Evaluation .mage { left: 61rem !important; }}";
+
+  // Function To Dismiss Progress Ring
+  dismissProgress();
 }
 
 function englishLang() {
@@ -294,9 +300,12 @@ function englishLang() {
   $("#Event1").text(language.Event1);
   $("#team1").text(language.team1);
   $("#career1").text(language.career1);
-  $(".mage").css({ left: "23rem", "text-align": "right" });
+  // $(".mage").css({ left: "23rem", "text-align": "right" });
   $(".Veyolo .veyolo-img img").css({
-    "margin-left": "5rem",
+    // "margin-left": "5rem",
     "text-align": "right",
   });
+
+  // Function To Dismiss Progress Ring
+  dismissProgress();
 }

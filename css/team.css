@@ -325,6 +325,7 @@ flex-flow: column-reverse;
   
   .cv form .send {
       width: 45%;
+      margin-top: 2rem;
   }
 
   
@@ -335,6 +336,10 @@ flex-flow: column-reverse;
 
   .swiper-slide .person {
       height: 40vh;
+  }
+
+  .cv form input {
+    padding: 2%;
   }
 
   .pepole h1 {
@@ -351,8 +356,13 @@ flex-flow: column-reverse;
   .pepole p {
       margin-top: 0;
       margin-left: 1rem;
-      font-size: 13px;
+      font-size: 11px;
       line-height: 1.7;
+  }
+
+  .jion .openCvBtn {
+    padding: 1rem;
+    margin-top: 2rem;
   }
 
   .pepole ul {

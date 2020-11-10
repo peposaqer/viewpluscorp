@@ -552,6 +552,11 @@ a {
     flex-flow: column-reverse;
   }
 
+  
+  .side--menu {
+    display: none;
+  }
+
   .smart {
     height: 100%;
   }
@@ -614,6 +619,7 @@ a {
 
   .smart-contener-img {
     max-width: 100%;
+    margin-top: 3rem;
   }
 
   .smart .group {
@@ -623,7 +629,7 @@ a {
 
   .smart .mage {
     margin-top: 18rem !important; 
-    left: 1rem ;
+    left: 1rem !important;
     width: 20% !important;
   }
 
@@ -650,7 +656,7 @@ a {
   .Evaluation .mage {
     width: 50%;
     margin-top: 20rem;
-    left: 0rem;
+    left: 0rem !important;
   }
 
     .Evaluation .group {
@@ -702,18 +708,31 @@ a {
 
   .inon .group {
     justify-content: end;
+    margin-top: 5rem;
   }
 
   .inon p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.8;
     width: 100%;
 }
+.footer form input {
+  padding: 2%;
+}
+
 }
 
 @media (min-width: 321px) and (max-width: 425px) {
   .revers {
     flex-flow: column-reverse;
+  }
+
+  .side--menu {
+    display: none;
+  }
+
+  .hero-img p {
+    font-size: 12px;
   }
 
   .smart {
@@ -772,6 +791,7 @@ a {
 
   .smart-contener-img {
     max-width: 100%;
+    margin-top: 3rem;
   }
 
   .smart .group {
@@ -783,6 +803,10 @@ a {
     margin-top: 20rem !important; 
     left: 1rem !important;
     width: 20% !important;
+  }
+
+  .Evaluation p {
+    font-size: 14px;
   }
 
     .Evaluation .group {
@@ -819,6 +843,7 @@ a {
 
   .Veyolo .veyolo-img {
     padding: 0;
+    margin-top: 2rem;
   }
 
   .Veyolo .veyolo-img img {
@@ -856,6 +881,15 @@ a {
     .inon .visit {
     width: 50%;
   }
+
+  .inon p {
+    font-size: 14px;
+  }
+
+  .footer form input {
+    padding: 2%;
+  }
+
 }
 
 @media (min-width: 426px) and (max-width: 768px) {

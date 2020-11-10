@@ -455,13 +455,13 @@ display: none;
     height: 100%;
   }
 
- .revers {
+  .revers {
     flex-flow: column-reverse;
   }
 
   .event .smart-contener-img {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
 
   .event .smart-img-back {
@@ -475,6 +475,7 @@ display: none;
   .event .smart-img-front {
     width: 45%;
     margin-left: 0rem;
+    left: 10rem;
   }
 
   .event .group {
