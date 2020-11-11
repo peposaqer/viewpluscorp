@@ -12,7 +12,7 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  opacity: .6;
+  opacity: 1;
 }
 
 .work-spinner {

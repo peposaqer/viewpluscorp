@@ -421,9 +421,48 @@ left: 8rem;
 .event .group {
 margin-top: 0rem;
 }
-
+/* 
 .tabs {
 display: none;
+} */
+
+.nav-tabs .nav-link {
+  font-size: 15px!important;
+  margin-right: 17px !important;
+  line-height: 2;
+}
+
+.tabs h1 {
+  font-size: 18px;
+}
+
+.tabs span {
+  font-size: 14px;
+  display: block;
+}
+
+.tabs .openCvBtn {
+  float: none;
+  padding: .5rem;
+  line-height: 3;
+}
+
+.hid {
+  display: none;
+}
+
+.openmodel {
+  width: 100%;
+}
+
+.openmodel form .send {
+  width: 50%;
+  padding: 3%;
+  margin-top: 2rem;
+}
+
+.openmodel form input {
+  padding: 2%;
 }
 
 .jion img {
@@ -481,10 +520,51 @@ display: none;
   .event .group {
     margin-top: 0rem;
   }
-
+/* 
   .tabs {
     display: none;
-  }
+  } */
+
+  
+.nav-tabs .nav-link {
+  font-size: 15px!important;
+  margin-right: 17px !important;
+  line-height: 2;
+}
+
+.tabs h1 {
+  font-size: 18px;
+}
+
+.tabs span {
+  font-size: 14px;
+  display: block;
+}
+
+.tabs .openCvBtn {
+  float: none;
+  padding: .5rem;
+  line-height: 3;
+}
+
+.hid {
+  display: none;
+}
+
+.openmodel {
+  width: 100%;
+}
+
+
+.openmodel form .send {
+  width: 50%;
+  padding: 3%;
+  margin-top: 2rem;
+}
+
+.openmodel form input {
+  padding: 2%;
+}
 
   
   .jion img {
@@ -533,10 +613,40 @@ display: none;
   .event .group {
     margin-top: 0rem;
   }
-
+/* 
   .tabs {
     display: none;
-  }
+  } */
+
+  
+.nav-tabs .nav-link {
+  font-size: 24px!important;
+  margin-right: 2rem !important;
+}
+
+.tabs h1 {
+  font-size: 22px;
+}
+
+.tabs span {
+  font-size: 16px;
+}
+
+.tabs .openCvBtn {
+  padding: .5rem;
+}
+
+
+  
+.openmodel form .send {
+  width: 50%;
+  padding: 3%;
+  margin-top: 2rem;
+}
+
+.openmodel form input {
+  padding: 2%;
+}
 
   .jion {
       height: 100%;

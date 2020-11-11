@@ -210,8 +210,10 @@ function arabicLang() {
   $("#Event1").text(language.Event1);
   $("#team1").text(language.team1);
   $("#career1").text(language.career1);
-  // $(".mage").css({ "left": "73rem", "text-align": "right" });
-  // $(".Veyolo .veyolo-img img").css({ "margin-right": "5rem", "text-align": "right" });
+  $(".navbar-brand").css({ "float": "right"});
+  $("nav ul").css({ "float": "left"});
+  $(".open-nav").css({ float: "left" });
+
 
   document.querySelector("style").textContent +=
     "@media screen and (max-width:320px) { .smart .mage { left: 15rem !important; }}";
@@ -245,6 +247,7 @@ function arabicLang() {
 
   document.querySelector("style").textContent +=
     "@media screen and (min-width:1440px) { .Evaluation .mage { left: 61rem !important; }}";
+
 
   // Function To Dismiss Progress Ring
   dismissProgress();
@@ -305,6 +308,11 @@ function englishLang() {
     // "margin-left": "5rem",
     "text-align": "right",
   });
+  
+    
+  $(".navbar-brand").css({ float: "left"});
+  $("nav ul").css({ float: "right"});
+  $(".open-nav").css({ float: "right" });
 
   // Function To Dismiss Progress Ring
   dismissProgress();

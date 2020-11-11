@@ -1,6 +1,5 @@
 $("nav .x-mark").on("click", function () {
   $("nav ul").hide();
-  console.log(gbajsdgbj);
   $("#check").prop("checked", false);
 });
 
@@ -31,7 +30,7 @@ $(".apply a").on("click", function () {
     loopedSlides: 4, //looped slides should be the same
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    width: 160,
+    // width: 160,
     slidesPerView: "auto",
     breakpoints: {
       // when window width is >= 320px
@@ -172,6 +171,9 @@ function arabicLang() {
   $("#Event1").text(language.Event1);
   $("#team1").text(language.team1);
   $("#career1").text(language.career1);
+    $(".navbar-brand").css({ float: "right", "text-align": "center" });
+    $("nav ul").css({ float: "left", "text-align": "center" });
+
 }
 
 function englishLang() {
@@ -221,4 +223,7 @@ function englishLang() {
   $("#Event1").text(language.Event1);
   $("#team1").text(language.team1);
   $("#career1").text(language.career1);
+      
+  $(".navbar-brand").css({ float: "left", "text-align": "center" });
+  $("nav ul").css({ float: "right", "text-align": "center" });
 }

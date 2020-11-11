@@ -191,6 +191,8 @@ function arabicLang() {
   $("#footer_input_send2").attr("value", language.footer_input_send);
   $("#team_cv_Subject1").attr("placeholder", language.team_cv_Subject);
   $("#career_model_one1").text(language.career_model_one1);
+   $(".navbar-brand").css({ float: "right", "text-align": "center" });
+   $("nav ul").css({ float: "left", "text-align": "center" });
 }
 
 function englishLang() {
@@ -277,4 +279,8 @@ function englishLang() {
   $("#footer_input_send2").attr("value", language.footer_input_send);
   $("#team_cv_Subject1").attr("placeholder", language.team_cv_Subject);
   $("#career_model_one1").text(language.career_model_one1);
+
+      
+  $(".navbar-brand").css({ float: "left", "text-align": "center" });
+  $("nav ul").css({ float: "right", "text-align": "center" });
 }

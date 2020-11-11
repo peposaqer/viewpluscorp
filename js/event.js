@@ -174,6 +174,8 @@ function arabicLang() {
   $("#Event1").text(language.Event1);
   $("#team1").text(language.team1);
   $("#career1").text(language.career1);
+  $(".navbar-brand").css({ float: "right", "text-align": "center" });
+  $("nav ul").css({ float: "left", "text-align": "center" });
 }
 
 function englishLang() {
@@ -212,4 +214,6 @@ function englishLang() {
   $("#Event1").text(language.Event1);
   $("#team1").text(language.team1);
   $("#career1").text(language.career1);
+  $(".navbar-brand").css({ float: "left", "text-align": "center" });
+  $("nav ul").css({ float: "right", "text-align": "center" });
 }

@@ -3,6 +3,10 @@
   text-align: right;
 }
 
+#grad1 {
+  background-image: linear-gradient(to top, rgba(122, 122, 122, 0.1), rgba(255,255,255,1));
+}
+
 html,
 body {
   margin: 0;
@@ -551,7 +555,10 @@ a {
  .revers {
     flex-flow: column-reverse;
   }
-
+  
+  .hero-img p {
+    font-size: 12px;
+  }
   
   .side--menu {
     display: none;
@@ -1166,7 +1173,7 @@ a {
   }
 
   .Evaluation .evaluatuin-img-tab1 {
-    height: 50%;
+    height: 75%;
   }
 
   .Veyolo .group {
@@ -1177,7 +1184,7 @@ a {
 
 
   .Veyolo .border {
-    height: 50vh;
+    height: 55vh;
   }
 
     .Veyolo .saqer-1 {
