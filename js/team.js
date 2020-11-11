@@ -171,8 +171,13 @@ function arabicLang() {
   $("#Event1").text(language.Event1);
   $("#team1").text(language.team1);
   $("#career1").text(language.career1);
-    $(".navbar-brand").css({ float: "right", "text-align": "center" });
-    $("nav ul").css({ float: "left", "text-align": "center" });
+  $(".navbar-brand").css({ float: "right" });
+  $("nav ul").css({ float: "left", direction: "rtl" });
+  $(".checkbtn").css({ float: "left" });
+  $(".open-nav").css({ float: "left" });
+  $(".di").css({ "padding-right": "2rem" });
+  $(".footer form input").css({ padding: "0.5rem 0.5rem .5rem .5rem" });
+  $(".footer form textarea").css({ padding: "0.5rem 0.5rem .5rem .5rem" });
 
 }
 
@@ -225,5 +230,6 @@ function englishLang() {
   $("#career1").text(language.career1);
       
   $(".navbar-brand").css({ float: "left", "text-align": "center" });
-  $("nav ul").css({ float: "right", "text-align": "center" });
+  $(".checkbtn").css({ float: "right" });
+  $("nav ul").css({ float: "right", direction: "ltr" });
 }

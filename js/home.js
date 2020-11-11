@@ -211,8 +211,12 @@ function arabicLang() {
   $("#team1").text(language.team1);
   $("#career1").text(language.career1);
   $(".navbar-brand").css({ "float": "right"});
-  $("nav ul").css({ "float": "left"});
-  $(".open-nav").css({ float: "left" });
+  $("nav ul").css({ float: "left", direction: "rtl" });
+  $(".checkbtn").css({ "float": "left" });
+  $(".open-nav").css({ "float": "left" });
+  $(".di").css({ "padding-right": "2rem" });
+  $(".footer form input").css({ padding: "0.5rem 0.5rem .5rem .5rem" });
+  $(".footer form textarea").css({ padding: "0.5rem 0.5rem .5rem .5rem" });
 
 
   document.querySelector("style").textContent +=
@@ -247,6 +251,7 @@ function arabicLang() {
 
   document.querySelector("style").textContent +=
     "@media screen and (min-width:1440px) { .Evaluation .mage { left: 61rem !important; }}";
+
 
 
   // Function To Dismiss Progress Ring
@@ -309,9 +314,9 @@ function englishLang() {
     "text-align": "right",
   });
   
-    
+  $("nav ul").css({ float: "right", direction: "ltr" });
   $(".navbar-brand").css({ float: "left"});
-  $("nav ul").css({ float: "right"});
+  $(".checkbtn").css({ float: "right" });
   $(".open-nav").css({ float: "right" });
 
   // Function To Dismiss Progress Ring

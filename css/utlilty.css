@@ -238,7 +238,7 @@ nav .x-mark {
 .footer form input {
     background-color: transparent;
     border-radius: 3px;
-    /* padding: 1rem;    */
+    padding: .5rem 0 0.5rem .5rem;   
     font-size: 18px;
     color: #FFF;
     margin-top: 1rem;
@@ -254,7 +254,7 @@ nav .x-mark {
 .footer form textarea {
     background-color: transparent;
     border-radius: 3px;
-    /* padding: 1rem;    */
+    padding: .5rem 0 0 .5rem;   
     font-size: 18px;
     color: #FFF;
     margin-top: 1rem;
