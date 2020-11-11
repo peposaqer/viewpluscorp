@@ -447,8 +447,8 @@ display: none;
 
 .tabs .openCvBtn {
   float: none;
-  padding: .5rem;
-  line-height: 3;
+  padding: 1rem;
+  line-height: 5;
 }
 
 .hid {
@@ -551,8 +551,8 @@ display: none;
 
 .tabs .openCvBtn {
   float: none;
-  padding: .5rem;
-  line-height: 3;
+  padding: 1rem;
+  line-height: 5;
 }
 
 .hid {
