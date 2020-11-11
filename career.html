@@ -171,7 +171,17 @@
     <!-- start tabs -->
     <div class="tabs">
           <div class="container">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <div class="dropdown hide">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="activeTabName">Designer</span><i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item nav-link active" id="Designer-tab" data-toggle="tab" href="#Designer" role="tab" aria-controls="Designer" aria-selected="true"><span>Designer</span><i class="fas fa-check" id="check1"></i></a>
+                  <a class="dropdown-item nav-link" id="Developers-tab" data-toggle="tab" href="#Developers" role="tab" aria-controls="Developers" aria-selected="false"><span>Developers</span><i class="fas fa-check" id="check2"></i></a>
+                  <a class="dropdown-item nav-link" id="Marketing-tab" data-toggle="tab" href="#Marketing" role="tab" aria-controls="Marketing" aria-selected="false"><span>Marketing</span><i class="fas fa-check" id="check3"></i></a>
+                  <a class="dropdown-item nav-link" id="Resources-tab" data-toggle="tab" href="#Resources" role="tab" aria-controls="Resources" aria-selected="false" style="border-bottom: none !important;"><span>Resources</span><i class="fas fa-check" id="check4"></i></a>
+                </div>
+              </div>
+              <ul class="nav nav-tabs test" id="myTab" role="tablist">
                   <li class="nav-item">
                       <a class="nav-link active" id="Designer-tab" data-toggle="tab" href="#Designer" role="tab" aria-controls="Designer" aria-selected="true">Designer</a>
                   </li>

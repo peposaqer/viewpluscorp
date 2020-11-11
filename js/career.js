@@ -67,9 +67,9 @@ $(document).ready(function () {
   });
 });
 
-  $(window).bind("load", function () {
-    $("#work-in-progress").fadeOut(100);
-  });
+$(window).bind("load", function () {
+  $("#work-in-progress").fadeOut(100);
+});
 
 // Change Languages
 var language;
@@ -102,7 +102,7 @@ function setLanguage(lang) {
 }
 
 // change to English
-$(".en").on('click', englishLang);
+$(".en").on("click", englishLang);
 // change to Arabic
 $(".arbic").on("click", arabicLang);
 
@@ -285,9 +285,45 @@ function englishLang() {
   $("#team_cv_Subject1").attr("placeholder", language.team_cv_Subject);
   $("#career_model_one1").text(language.career_model_one1);
 
-      
+  
   $(".navbar-brand").css({ float: "left", "text-align": "center" });
   $(".checkbtn").css({ float: "right" });
   $("nav ul").css({ float: "right", direction: "ltr" });
-
 }
+
+$("#check2").hide();
+$("#check3").hide();
+$("#check4").hide();
+
+
+$("#Designer-tab").click(function () {
+  $("#activeTabName").text("Designer");
+  $("#check1").show();
+  $("#check2").hide();
+  $("#check3").hide();
+  $("#check4").hide();
+});
+
+$("#Developers-tab").click(function () {
+  $("#activeTabName").text("Developers");
+  $("#check2").show();
+  $("#check1").hide();
+  $("#check3").hide();
+  $("#check4").hide();
+});
+
+$("#Marketing-tab").click(function () {
+  $("#activeTabName").text("Marketing");
+  $("#check3").show();
+  $("#check2").hide();
+  $("#check1").hide();
+  $("#check4").hide();
+});
+
+$("#Resources-tab").click(function () {
+  $("#activeTabName").text("Resources");
+  $("#check4").show();
+  $("#check2").hide();
+  $("#check3").hide();
+  $("#check1").hide();
+});
