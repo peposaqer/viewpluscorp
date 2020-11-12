@@ -1,4 +1,4 @@
-.right-dir{
+.right-dir {
   direction: rtl;
   text-align: right;
 }
@@ -6,9 +6,8 @@
 /* start swiper */
 
 .slider {
-    height: 100vh;
+  height: 100vh;
 }
-
 
 .swiper-container {
   width: 100%;
@@ -42,8 +41,8 @@
 }
 
 .gallery-thumbs .swiper-slide {
-  height: 180px !important;
-  width: 180px !important;
+  height: 150px !important;
+  width: 150px !important;
   opacity: 0.4;
 }
 
@@ -83,7 +82,7 @@
   height: 100%;
   text-align: center;
   margin-left: 25%;
-    height: 100vh;
+  height: 100vh;
 }
 
 .pepole ul li {
@@ -91,7 +90,6 @@
 }
 
 /* end swiper */
-
 
 /* start jion */
 
@@ -220,9 +218,8 @@
 }
 
 .cv .arrow {
-    margin-left: 5%;
+  margin-left: 5%;
 }
-
 
 .swiper-wrapper {
   align-items: center;
@@ -233,33 +230,32 @@
 /* start madia */
 
 @media (max-width: 320px) {
+  .revers {
+    flex-flow: column-reverse;
+  }
 
-.revers {
-flex-flow: column-reverse;
-}
-
-.jion img {
+  .jion img {
     width: 55%;
     text-align: center;
     margin-left: 4rem;
-}
+  }
 
-.jion .group {
+  .jion .group {
     margin-top: 0rem;
-}
+  }
 
-.footer {
+  .footer {
     height: 100%;
-}
+  }
 
   .cv {
-      width: 100%;
+    width: 100%;
   }
 
   .cv form .send {
-      width: 55%;
-      margin-top: 2rem;
-      padding: 1rem;
+    width: 55%;
+    margin-top: 2rem;
+    padding: 1rem;
   }
 
   .cv form input {
@@ -267,104 +263,98 @@ flex-flow: column-reverse;
   }
 
   .cv form h3 {
-      font-size: 12px;
+    font-size: 12px;
   }
-  
-  
+
   .slider {
-      padding-top: 3rem;
-      height: 100vh;
+    padding-top: 3rem;
+    height: 100vh;
   }
 
   .swiper-slide .person {
-      height: 40vh;
+    height: 40vh;
   }
 
   .pepole h1 {
-      margin-top: 0;
-      margin-left: 1rem;
-      font-size: 24px;
+    margin-top: 0;
+    margin-left: 1rem;
+    font-size: 24px;
   }
 
   .pepole span {
-      margin-top: 0;
-      margin-left: 1rem;
+    margin-top: 0;
+    margin-left: 1rem;
   }
 
   .pepole p {
-      margin-top: 0;
-      margin-left: 1rem;
-      font-size: 9px;
-      line-height: 1.7;
+    margin-top: 0;
+    margin-left: 1rem;
+    font-size: 9px;
+    line-height: 1.7;
   }
 
   .pepole ul {
-      margin-top: 0;
-      margin-left: 1rem;
-      padding: 0;
+    margin-top: 0;
+    margin-left: 1rem;
+    padding: 0;
   }
 
   .gallery-thumbs {
-      height: 25%;
-      margin-top: 35%;
-      text-align: center;
-      margin-left: 0% !important;
-      max-width: 100% !important;
+    height: 25%;
+    margin-top: 35%;
+    text-align: center;
+    margin-left: 0% !important;
+    max-width: 100% !important;
   }
-  
 
   .gallery-thumbs .swiper-slide {
     width: 40px !important;
     height: 40px !important;
   }
-
 }
 
 @media (min-width: 321px) and (max-width: 425px) {
-.revers {
-flex-flow: column-reverse;
-}
-  
-  .jion img {
-      width: 55%;
-      text-align: center;
-      margin-left: 4rem;
+  .revers {
+    flex-flow: column-reverse;
   }
 
-  
-    .gallery-thumbs {
-        max-width: 100%;
-        /* margin-left: 15%; */
-    }
+  .jion img {
+    width: 55%;
+    text-align: center;
+    margin-left: 4rem;
+  }
+
+  .gallery-thumbs {
+    max-width: 100%;
+    /* margin-left: 15%; */
+  }
 
   .gallery-thumbs .swiper-slide {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
     /* margin-top: 1rem; */
   }
 
   .jion .group {
-      margin-top: 0rem;
+    margin-top: 0rem;
   }
 
   .cv {
-      width: 100%;
+    width: 100%;
   }
 
-  
   .cv form .send {
     width: 45%;
     margin-top: 2rem;
   }
 
-  
   .slider {
-      padding-top: 3rem;
-      height: 100vh;
+    padding-top: 3rem;
+    height: 100vh;
   }
 
   .swiper-slide .person {
-      height: 35vh;
+    height: 35vh;
   }
 
   .cv form input {
@@ -372,21 +362,21 @@ flex-flow: column-reverse;
   }
 
   .pepole h1 {
-      margin-top: 0;
-      margin-left: 1rem;
-      font-size: 24px;
+    margin-top: 0;
+    margin-left: 1rem;
+    font-size: 24px;
   }
 
   .pepole span {
-      margin-top: 0;
-      margin-left: 1rem;
+    margin-top: 0;
+    margin-left: 1rem;
   }
 
   .pepole p {
-      margin-top: 0;
-      margin-left: 1rem;
-      font-size: 9px;
-      line-height: 1.7;
+    margin-top: 0;
+    margin-left: 1rem;
+    font-size: 9px;
+    line-height: 1.7;
   }
 
   .jion .openCvBtn {
@@ -395,41 +385,40 @@ flex-flow: column-reverse;
   }
 
   .pepole ul {
-      margin-top: 0;
-      margin-left: 1rem;
+    margin-top: 0;
+    margin-left: 1rem;
   }
 
   .gallery-thumbs {
-      height: 25%;
-      margin-top: 20%;
-      text-align: center;
-      margin-left: 5% !important;
-      max-width: 90% !important;
-      /* align-items: start; */
-
+    height: 25%;
+    margin-top: 20%;
+    text-align: center;
+    margin-left: 5% !important;
+    max-width: 90% !important;
+    /* align-items: start; */
   }
 
   .footer {
     height: 100%;
-}
+  }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-.revers {
-flex-flow: column-reverse;
-}
+  .revers {
+    flex-flow: column-reverse;
+  }
   .jion {
-      height: 100%;
+    height: 100%;
   }
 
   .jion img {
-      width: 35%;
-      text-align: center;
-      margin-left: 12rem;
+    width: 35%;
+    text-align: center;
+    margin-left: 12rem;
   }
 
   .jion .group {
-      margin-top: 0rem;
+    margin-top: 0rem;
   }
 
   .cv h1 {
@@ -437,42 +426,40 @@ flex-flow: column-reverse;
   }
 
   .cv i {
-      top: 45px;
+    top: 45px;
   }
-  
+
   .cv form .send {
-      width: 35%;
+    width: 35%;
   }
 
-  
-    .slider {
-        height: 100vh;
-    }
+  .slider {
+    height: 100vh;
+  }
 
+  .pepole p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
 
-    .pepole p {
-        font-size: 13px;
-        line-height: 1.6;
-    }
+  .pepole ul {
+    padding: 0;
+    margin-left: 0rem;
+  }
 
-    .pepole ul {
-        padding: 0;
-        margin-left: 0rem;
-    }
-
-    .gallery-thumbs {
-        max-width: 80%;
-        margin-left: 15%;
-    }
+  .gallery-thumbs {
+    max-width: 80%;
+    margin-left: 15%;
+  }
 
   .gallery-thumbs .swiper-slide {
     width: 100px !important;
     height: 100px !important;
   }
 
-    .footer {
+  .footer {
     height: 100%;
-}
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -495,6 +482,12 @@ flex-flow: column-reverse;
   .pepole p {
     font-size: 15px;
     line-height: 1.5;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sliderMargin{
+    margin-left: 5rem !important;
   }
 }
 
