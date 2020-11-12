@@ -1,6 +1,5 @@
 $("nav .x-mark").on("click", function () {
   $("nav ul").hide();
-  console.log(gbajsdgbj);
   $("#check").prop("checked", false);
 });
 
@@ -138,9 +137,9 @@ $(".en").on('click', englishLang);
 $(".arbic").on("click", arabicLang);
 
 function arabicLang() {
-  console.log($(".chang"))
   $(".chang").addClass("right-dir");
   getLanguage();
+  $("#check").prop("checked", false);
   $("#home").text(language.home);
   $("#Event").text(language.Event);
   $("#team").text(language.team);
@@ -175,17 +174,19 @@ function arabicLang() {
   $("#team1").text(language.team1);
   $("#career1").text(language.career1);
   $(".navbar-brand").css({ float: "right" });
-  $("nav ul").css({ float: "left", direction: "rtl" });
+  $("nav ul").css({ float: "left"});
   $(".checkbtn").css({ float: "left" });
   $(".open-nav").css({ float: "left" });
   $(".di").css({ "padding-right": "2rem" });
   $(".footer form input").css({ padding: "0.5rem 0.5rem .5rem .5rem" });
+  $(".linked").css({ "padding-left": "1rem" });
   $(".footer form textarea").css({ padding: "0.5rem 0.5rem .5rem .5rem" });
 }
 
 function englishLang() {
   $(".chang").removeClass("right-dir");
   getLanguage();
+  $("#check").prop("checked", false);
   $("#home").text(language.home);
   $("#Event").text(language.Event);
   $("#team").text(language.team);

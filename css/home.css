@@ -15,6 +15,7 @@ body {
   background: #fff;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  overflow-y: overlay;
 }
 /* emd nav */
 /* start header */
@@ -36,7 +37,7 @@ a {
 .hero-img p {
   width: 70%;
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.5;
   align-self: center;
 }
 
@@ -192,13 +193,11 @@ a {
 }
 
 .read .ead {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  transition: all 9s ease;
-  animation-name: ex;
-  animation-duration: 9s;
+  padding-top: 5rem;
 }
 
 
@@ -557,11 +556,16 @@ a {
   }
   
   .hero-img p {
-    font-size: 12px;
+    font-size: 9px;
   }
   
   .side--menu {
     display: none;
+  }
+
+  
+  .read {
+    height: 100%;
   }
 
   .smart {
@@ -702,7 +706,7 @@ a {
   .Veyolo .veyolo-img img {
     width: 100%;
     background-size: cover;
-    margin-top: 0;
+    margin-top: 5rem;
     margin-left: 0;
     z-index: 10;
     position: relative;
@@ -739,7 +743,11 @@ a {
   }
 
   .hero-img p {
-    font-size: 12px;
+    font-size: 9px;
+  }
+
+  .read {
+    height: 100%;
   }
 
   .smart {
@@ -902,6 +910,12 @@ a {
 @media (min-width: 426px) and (max-width: 768px) {
   .revers {
     flex-flow: column-reverse;
+  }
+
+
+  #smart-nav {
+    position: relative;
+    top: 3rem;
   }
 
     .smart {
@@ -1083,6 +1097,25 @@ a {
     margin-left: 2rem;
   }
 
+  .hero-img p {
+    font-size: 12px;
+  }
+
+  .smart {
+    height: 100%;
+  }
+
+  
+  .Evaluation {
+    height: 100%;
+  }
+
+  
+  .Veyolo {
+    height: 100%;
+  }
+
+
   .smart-img-front {
     height: 39%;
   }
@@ -1120,7 +1153,9 @@ a {
 
   .Veyolo .veyolo-img img {
     margin-left: 2rem;
-    margin-top: 11rem;
+    /* margin-top: 8rem; */
+    height: 80%;
+    margin-top: 2rem;
   }
 
 
@@ -1128,6 +1163,11 @@ a {
     max-width: 100%;
     flex-flow: row;
     height: 100%;
+  }
+
+  .Veyolo .border {
+    height: 80vh;
+    top: 5rem;
   }
 
   .Veyolo .saqer-1 {
@@ -1144,6 +1184,15 @@ a {
     margin-left: 5rem;
   }
 
+  .smart {
+    height: 100%;
+  }
+
+
+  .Evaluation {
+    height: 100%;
+  }
+  
   .smart-img-front {
     height: 57%;
   }

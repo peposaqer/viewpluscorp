@@ -41,8 +41,8 @@
 }
 
 .gallery-thumbs .swiper-slide {
-  height: 150px !important;
-  width: 150px !important;
+  height: 130px !important;
+  width: 130px !important;
   opacity: 0.4;
 }
 
@@ -273,6 +273,7 @@
 
   .swiper-slide .person {
     height: 40vh;
+    width: auto;
   }
 
   .pepole h1 {
@@ -355,6 +356,7 @@
 
   .swiper-slide .person {
     height: 35vh;
+    width: auto;
   }
 
   .cv form input {
@@ -489,6 +491,8 @@
   .sliderMargin{
     margin-left: 5rem !important;
   }
+
+
 }
 
 /* end madia */
