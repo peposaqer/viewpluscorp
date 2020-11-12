@@ -23,31 +23,38 @@ $(".apply a").on("click", function () {
 
 
   var galleryThumbs = new Swiper(".gallery-thumbs", {
-    spaceBetween: 10,
+    spaceBetween: 20,
     slidesPerView: 4,
-    loop: true,
-    freeMode: true,
-    loopedSlides: 4, //looped slides should be the same
+    // loop: true,
+    // freeMode: true,
+    // loopedSlides: 4, //looped slides should be the same
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    // width: 160,
-    slidesPerView: "auto",
+    // width: 15,
+    // autoHeight: true,
+    // roundLengths: true,
+    // nested: true,
+    setWrapperSize: true,
+    navigation: {
+      nextEl: ".arrow-right",
+      prevEl: ".arrow-left",
+    },
     breakpoints: {
       // when window width is >= 320px
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
+      // 320: {
+      //   slidesPerView: 2,
+      //   spaceBetween: 20,
+      // },
       // when window width is >= 480px
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
+      // 425: {
+      //   slidesPerView: 3,
+      //   spaceBetween: 30,
+      // },
       // when window width is >= 640px
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
+      // 770: {
+      //   slidesPerView: 4,
+      //   spaceBetween: 40,
+      // },
     },
   });
   var galleryTop = new Swiper(".gallery-top", {

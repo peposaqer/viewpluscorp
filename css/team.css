@@ -32,8 +32,8 @@
 .gallery-thumbs {
   height: 45%;
   box-sizing: border-box;
-  margin-left: 30%;
-  max-width: 60%;
+  margin-left: 25%;
+  max-width: 70%;
   background-color: transparent;
   position: absolute;
   top: 60vh;
@@ -42,13 +42,14 @@
 }
 
 .gallery-thumbs .swiper-slide {
-  height: 70%;
-  width: 20%;
+  height: 180px !important;
+  width: 180px !important;
   opacity: 0.4;
 }
 
 .gallery-thumbs .swiper-slide-thumb-active {
   opacity: 1;
+  transform: scale(1.2);
 }
 
 .pepole h1 {
@@ -223,6 +224,9 @@
 }
 
 
+.swiper-wrapper {
+  align-items: center;
+}
 
 /* end cv */
 
@@ -268,7 +272,7 @@ flex-flow: column-reverse;
   
   
   .slider {
-      margin-top: 3rem;
+      padding-top: 3rem;
       height: 100vh;
   }
 
@@ -290,7 +294,7 @@ flex-flow: column-reverse;
   .pepole p {
       margin-top: 0;
       margin-left: 1rem;
-      font-size: 11px;
+      font-size: 9px;
       line-height: 1.7;
   }
 
@@ -302,12 +306,17 @@ flex-flow: column-reverse;
 
   .gallery-thumbs {
       height: 25%;
-      margin-top: 50%;
+      margin-top: 35%;
       text-align: center;
       margin-left: 0% !important;
       max-width: 100% !important;
   }
+  
 
+  .gallery-thumbs .swiper-slide {
+    width: 40px !important;
+    height: 40px !important;
+  }
 
 }
 
@@ -320,6 +329,18 @@ flex-flow: column-reverse;
       width: 55%;
       text-align: center;
       margin-left: 4rem;
+  }
+
+  
+    .gallery-thumbs {
+        max-width: 100%;
+        /* margin-left: 15%; */
+    }
+
+  .gallery-thumbs .swiper-slide {
+    width: 50px !important;
+    height: 50px !important;
+    /* margin-top: 1rem; */
   }
 
   .jion .group {
@@ -338,12 +359,12 @@ flex-flow: column-reverse;
 
   
   .slider {
-      margin-top: 3rem;
+      padding-top: 3rem;
       height: 100vh;
   }
 
   .swiper-slide .person {
-      height: 40vh;
+      height: 35vh;
   }
 
   .cv form input {
@@ -364,7 +385,7 @@ flex-flow: column-reverse;
   .pepole p {
       margin-top: 0;
       margin-left: 1rem;
-      font-size: 11px;
+      font-size: 9px;
       line-height: 1.7;
   }
 
@@ -380,10 +401,12 @@ flex-flow: column-reverse;
 
   .gallery-thumbs {
       height: 25%;
-      margin-top: 35%;
+      margin-top: 20%;
       text-align: center;
-      margin-left: 0% !important;
-      max-width: 100% !important;
+      margin-left: 5% !important;
+      max-width: 90% !important;
+      /* align-items: start; */
+
   }
 
   .footer {
@@ -428,7 +451,8 @@ flex-flow: column-reverse;
 
 
     .pepole p {
-        font-size: 14px;
+        font-size: 13px;
+        line-height: 1.6;
     }
 
     .pepole ul {
@@ -437,9 +461,14 @@ flex-flow: column-reverse;
     }
 
     .gallery-thumbs {
-        max-width: 40%;
-        margin-left: 50%;
+        max-width: 80%;
+        margin-left: 15%;
     }
+
+  .gallery-thumbs .swiper-slide {
+    width: 100px !important;
+    height: 100px !important;
+  }
 
     .footer {
     height: 100%;
@@ -447,11 +476,25 @@ flex-flow: column-reverse;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .gallery-thumbs .swiper-slide {
+    width: 130px !important;
+    height: 130px !important;
+  }
+
+  .gallery-thumbs {
+    max-width: 75%;
+  }
+
+  .pepole p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .pepole p {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.5;
   }
 }
 
