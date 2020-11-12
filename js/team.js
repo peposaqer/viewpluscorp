@@ -185,6 +185,7 @@ function arabicLang() {
   $(".di").css({ "padding-right": "2rem" });
   $(".footer form input").css({ padding: "0.5rem 0.5rem .5rem .5rem" });
   $(".footer form textarea").css({ padding: "0.5rem 0.5rem .5rem .5rem" });
+  $(".slider .pepole").css({ "margin-right": "5rem" });
 
 }
 
