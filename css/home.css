@@ -16,6 +16,7 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   overflow-y: overlay;
+  scroll-behavior: smooth;
 }
 /* emd nav */
 /* start header */
