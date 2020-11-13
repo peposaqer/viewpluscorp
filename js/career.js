@@ -207,6 +207,12 @@ function arabicLang() {
   $(".openmodel .ui").css({ "padding-right": "1rem" });
   $(".linked").css({ "padding-left": "1rem" });
   $(".openmodel form").css({ "padding-right": "1rem" });
+
+  document.querySelector("style").textContent +=
+    "@media screen and (min-width:1440px) { nav ul { direction: rtl; }}";
+
+  document.querySelector("style").textContent +=
+    "@media screen and (min-width:1024px) { nav ul { direction: rtl; }}";
 }
 
 function englishLang() {
@@ -298,7 +304,15 @@ function englishLang() {
   
   $(".navbar-brand").css({ float: "left", "text-align": "center" });
   $(".checkbtn").css({ float: "right" });
-  $("nav ul").css({ float: "right", direction: "ltr" });
+  $("nav ul").css({ float: "right",});
+  
+
+  document.querySelector("style").textContent +=
+    "@media screen and (min-width:1440px) { nav ul { direction: ltr; }}";
+
+  document.querySelector("style").textContent +=
+    "@media screen and (min-width:1024px) { nav ul { direction: ltr; }}";
+
 }
 
 $("#check2").hide();

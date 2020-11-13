@@ -219,6 +219,8 @@ a {
   color: #009bdb;
   border-bottom: 1px solid #009bdb;
   text-decoration: none;
+  position: relative;
+  z-index: 101;
 }
 
 /* end read more */
@@ -555,8 +557,10 @@ a {
     flex-flow: column-reverse;
   }
   
+
   .hero-img p {
-    font-size: 9px;
+    font-size: 12px;
+    width: 90%;
   }
   
   .side--menu {
@@ -743,7 +747,8 @@ a {
   }
 
   .hero-img p {
-    font-size: 9px;
+    font-size: 12px;
+    width: 90%;
   }
 
   .read {
@@ -1225,15 +1230,27 @@ a {
     height: 75%;
   }
 
+  .Veyolo {
+    height: 100%;
+  }
+
+
   .Veyolo .group {
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
 }
 
+.Veyolo .veyolo-img img {
+  height: 80%;
+  margin-top: 2rem;
+  width: 90%;
+}
+
 
   .Veyolo .border {
-    height: 55vh;
+  top: 10rem;
+    height: 70vh;
   }
 
     .Veyolo .saqer-1 {

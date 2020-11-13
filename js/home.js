@@ -254,6 +254,12 @@ function arabicLang() {
   document.querySelector("style").textContent +=
     "@media screen and (min-width:1440px) { .Evaluation .mage { left: 61rem !important; }}";
 
+  document.querySelector("style").textContent +=
+    "@media screen and (min-width:1440px) { nav ul { direction: rtl; }}";
+
+  document.querySelector("style").textContent +=
+    "@media screen and (min-width:1024px) { nav ul { direction: rtl; }}";
+
 
 
   // Function To Dismiss Progress Ring
@@ -317,10 +323,19 @@ function englishLang() {
     "text-align": "right",
   });
   
-  $("nav ul").css({ float: "right", direction: "ltr" });
+  $("nav ul").css({ float: "right"});
   $(".navbar-brand").css({ float: "left"});
   $(".checkbtn").css({ float: "right" });
   $(".open-nav").css({ float: "right" });
+
+  
+
+  document.querySelector("style").textContent +=
+    "@media screen and (min-width:1440px) { nav ul { direction: ltr; }}";
+
+  document.querySelector("style").textContent +=
+    "@media screen and (min-width:1024px) { nav ul { direction: ltr; }}";
+
 
   // Function To Dismiss Progress Ring
   dismissProgress();
