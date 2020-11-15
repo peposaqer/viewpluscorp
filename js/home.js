@@ -341,6 +341,19 @@ function englishLang() {
   dismissProgress();
 }
 
+$(".en").hide();
+
+//show more button
+$(".arbic").click(function () {
+  $(".arbic").hide();
+  $(".en").show();
+});
+
+//show more button
+$(".en").click(function () {
+  $(".en").hide();
+  $(".arbic").show();
+});
 
 
   document.querySelector("style").textContent +=
