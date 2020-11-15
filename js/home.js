@@ -340,3 +340,14 @@ function englishLang() {
   // Function To Dismiss Progress Ring
   dismissProgress();
 }
+
+
+
+  document.querySelector("style").textContent +=
+    "@media screen and (max-width:425px) { .inon video { display: none }}";
+
+  document.querySelector("style").textContent +=
+    "@media screen and (max-width:425px) { .inon  { background: url('../img/Inon-pic@2x.png') }}";
+
+  document.querySelector("style").textContent +=
+    "@media screen and (max-width:425px) { .inon  { background: cover !important}}";
