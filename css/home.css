@@ -1251,6 +1251,10 @@ a {
     height: 75%;
   }
 
+  .inon .side--menu {
+    margin-top: 7rem !important;
+  }
+
   .Veyolo {
     height: 100%;
   }
