@@ -78,11 +78,11 @@
 
 .swiper-slide .person {
   opacity: 1;
-  width: 50%;
-  height: 100%;
+  width: auto;
   text-align: center;
   margin-left: 25%;
-  height: 100vh;
+  height: 50vh;
+  margin-top: 5rem;
 }
 
 .pepole ul li {
