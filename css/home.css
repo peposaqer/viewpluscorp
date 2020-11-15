@@ -365,10 +365,29 @@ a {
 /* start inon */
 
 .inon {
-  background: url('../img/Inon-pic@2x.png');
-  height: 100vh;
+  /* background: url('../img/Inon-pic@2x.png'); */
+  height: 100%;
   background-size: cover;
   color: #fff;
+  overflow: hidden;
+}
+
+
+.inon video {
+  position: absolute;
+  margin-top: 29.3rem;
+  /* top: 25%; */
+  left: 50%;
+  /* min-width: 100vw; */
+  /* min-height: 100vh; */
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .inon .group {
@@ -412,6 +431,7 @@ a {
 .Partners {
   height: 100vh;
   background: url('../img/background.png');
+  padding-top: 8rem;
 }
 
 .Partners .porta {
