@@ -350,4 +350,4 @@ function englishLang() {
     "@media screen and (max-width:425px) { .inon  { background: url('../img/Inon-pic@2x.png') }}";
 
   document.querySelector("style").textContent +=
-    "@media screen and (max-width:425px) { .inon  { background: cover !important}}";
+    "@media screen and (max-width:425px) { .inon  { background-position: center;background-size: cover;}}";
