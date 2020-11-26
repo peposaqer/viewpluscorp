@@ -139,6 +139,8 @@ $(".arbic").on("click", arabicLang);
 function arabicLang() {
   $(".chang").addClass("right-dir");
   getLanguage();
+  $(".arbic").hide();
+  $(".en").show();
   $("#check").prop("checked", false);
   $("#home").text(language.home);
   $("#Event").text(language.Event);
@@ -192,6 +194,8 @@ function arabicLang() {
 function englishLang() {
   $(".chang").removeClass("right-dir");
   getLanguage();
+  $(".en").hide();
+  $(".arbic").show();
   $("#check").prop("checked", false);
   $("#home").text(language.home);
   $("#Event").text(language.Event);

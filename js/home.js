@@ -164,6 +164,8 @@ $(".arbic").on("click", arabicLang);
 function arabicLang() {
   $(".chang").addClass("right-dir");
   getLanguage();
+  $(".arbic").hide();
+  $(".en").show();
   $("#check").prop("checked", false);
   $("#header_dircation").text(language.header_dircation);
   $("#header_button").text(language.header_button);
@@ -269,6 +271,8 @@ function arabicLang() {
 function englishLang() {
   $(".chang").removeClass("right-dir");
   getLanguage();
+  $(".en").hide();
+  $(".arbic").show();
   $("#check").prop("checked", false);
   $("#header_dircation").text(language.header_dircation);
   $("#header_button").text(language.header_button);
@@ -340,20 +344,6 @@ function englishLang() {
   // Function To Dismiss Progress Ring
   dismissProgress();
 }
-
-$(".en").hide();
-
-//show more button
-$(".arbic").click(function () {
-  $(".arbic").hide();
-  $(".en").show();
-});
-
-//show more button
-$(".en").click(function () {
-  $(".en").hide();
-  $(".arbic").show();
-});
 
 
   document.querySelector("style").textContent +=
