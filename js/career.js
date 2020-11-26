@@ -155,7 +155,6 @@ function arabicLang() {
   $("#footer_input_Phone").text(language.footer_input_Phone);
   $("#footer_input_Email").text(language.footer_input_Email);
   $("#footer_input_message").text(language.footer_input_message);
-  $("#footer_input_send").text(language.footer_input_send);
   $("#footer_copy_one").text(language.footer_copy_one);
   $("#footer_copy_two").text(language.footer_copy_two);
   $("#footer_input_name").attr("placeholder", language.footer_input_name);
@@ -209,6 +208,7 @@ function arabicLang() {
   $(".openmodel .ui").css({ "padding-right": "1rem" });
   $(".linked").css({ "padding-left": "1rem" });
   $(".openmodel form").css({ "padding-right": "1rem" });
+  $(".footer form .send").css({ "text-align": "center" });
 
   document.querySelector("style").textContent +=
     "@media screen and (min-width:1440px) { nav ul { direction: rtl; }}";
@@ -263,12 +263,10 @@ function englishLang() {
   $("#footer_input_Phone").text(language.footer_input_Phone);
   $("#footer_input_Email").text(language.footer_input_Email);
   $("#footer_input_message").text(language.footer_input_message);
-  $("#footer_input_send").text(language.footer_input_send);
   $("#footer_copy_one").text(language.footer_copy_one);
   $("#footer_copy_two").text(language.footer_copy_two);
   $("#footer_input_name").attr("placeholder", language.footer_input_name);
   $("#footer_input_Email").attr("placeholder", language.footer_input_Email);
-  $("#footer_input_send").attr("placeholder", language.footer_input_send);
   $("#footer_input_message").attr("placeholder", language.footer_input_message);
   $("#footer_input_Phone").attr("placeholder", language.footer_input_Phone);
   $("#footer_input_send").attr("value", language.footer_input_send);
@@ -309,6 +307,7 @@ function englishLang() {
   $(".navbar-brand").css({ float: "left", "text-align": "center" });
   $(".checkbtn").css({ float: "right" });
   $("nav ul").css({ float: "right",});
+  $(".footer form .send").css({ "text-align": "center" });
   
 
   document.querySelector("style").textContent +=

@@ -203,7 +203,6 @@ function arabicLang() {
   $("#footer_Contact").text(language.footer_Contact);
   $("#footer_input_name").attr("placeholder", language.footer_input_name);
   $("#footer_input_Email").attr("placeholder", language.footer_input_Email);
-  $("#footer_input_send").attr("placeholder", language.footer_input_send);
   $("#footer_input_message").attr("placeholder", language.footer_input_message);
   $("#footer_input_Phone").attr("placeholder", language.footer_input_Phone);
   $("#footer_input_send").attr("value", language.footer_input_send);
@@ -219,8 +218,9 @@ function arabicLang() {
   $(".open-nav").css({ "float": "left" });
   $(".linked").css({ "padding-left": "1rem" });
   $(".di").css({ "padding-right": "2rem" });
-  $(".footer form input").css({ padding: "0.5rem 0.5rem .5rem .5rem" });
-  $(".footer form textarea").css({ padding: "0.5rem 0.5rem .5rem .5rem" });
+  $(".footer form input").css({ "padding": "0.5rem 0.5rem .5rem .5rem" });
+  $(".footer form textarea").css({ "padding": "0.5rem 0.5rem .5rem .5rem" });
+  $(".footer form .send").css({ "text-align": "center" });
 
 
   document.querySelector("style").textContent +=
@@ -311,7 +311,6 @@ function englishLang() {
   $("#footer_Contact").text(language.footer_Contact);
   $("#footer_input_name").attr("placeholder", language.footer_input_name);
   $("#footer_input_Email").attr("placeholder", language.footer_input_Email);
-  $("#footer_input_send").attr("placeholder", language.footer_input_send);
   $("#footer_input_message").attr("placeholder", language.footer_input_message);
   $("#footer_input_Phone").attr("placeholder", language.footer_input_Phone);
   $("#footer_input_send").attr("value", language.footer_input_send);
@@ -326,7 +325,7 @@ function englishLang() {
     // "margin-left": "5rem",
     "text-align": "right",
   });
-  
+  $(".footer form .send").css({ "text-align": "center" });
   $("nav ul").css({ float: "right"});
   $(".navbar-brand").css({ float: "left"});
   $(".checkbtn").css({ float: "right" });

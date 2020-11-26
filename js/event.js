@@ -162,7 +162,6 @@ function arabicLang() {
   $("#footer_Contact").text(language.footer_Contact);
   $("#footer_input_name").attr("placeholder", language.footer_input_name);
   $("#footer_input_Email").attr("placeholder", language.footer_input_Email);
-  $("#footer_input_send").attr("placeholder", language.footer_input_send);
   $("#footer_input_message").attr("placeholder", language.footer_input_message);
   $("#footer_input_Phone").attr("placeholder", language.footer_input_Phone);
   $("#footer_input_send").attr("value", language.footer_input_send);
@@ -183,6 +182,7 @@ function arabicLang() {
   $(".footer form input").css({ padding: "0.5rem 0.5rem .5rem .5rem" });
   $(".linked").css({ "padding-left": "1rem" });
   $(".footer form textarea").css({ padding: "0.5rem 0.5rem .5rem .5rem" });
+  $(".footer form .send").css({ "text-align": "center" });
 
   document.querySelector("style").textContent +=
     "@media screen and (min-width:1440px) { nav ul { direction: rtl; }}";
@@ -216,7 +216,6 @@ function englishLang() {
   $("#footer_Contact").text(language.footer_Contact);
   $("#footer_input_name").attr("placeholder", language.footer_input_name);
   $("#footer_input_Email").attr("placeholder", language.footer_input_Email);
-  $("#footer_input_send").attr("placeholder", language.footer_input_send);
   $("#footer_input_message").attr("placeholder", language.footer_input_message);
   $("#footer_input_Phone").attr("placeholder", language.footer_input_Phone);
   $("#footer_find").text(language.footer_find);
@@ -232,6 +231,7 @@ function englishLang() {
   $("#career1").text(language.career1);
   $(".navbar-brand").css({ float: "left", "text-align": "center" });
   $(".checkbtn").css({ float: "right" });
+  $(".footer form .send").css({ "text-align": "center" });
   $("nav ul").css({ float: "right"});
 
   document.querySelector("style").textContent +=

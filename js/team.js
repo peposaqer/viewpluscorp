@@ -150,7 +150,6 @@ function arabicLang() {
   $("#team_cv_title").text(language.team_cv_title);
   $("#footer_input_name").attr("placeholder", language.footer_input_name);
   $("#footer_input_Email").attr("placeholder", language.footer_input_Email);
-  $("#footer_input_send").attr("placeholder", language.footer_input_send);
   $("#footer_input_message").attr("placeholder", language.footer_input_message);
   $("#footer_input_Phone").attr("placeholder", language.footer_input_Phone);
   $("#footer_input_send").attr("value", language.footer_input_send);
@@ -193,6 +192,7 @@ function arabicLang() {
   $(".cv form textarea").css({ "margin-right": "1rem" });
   $(".linked").css({ "padding-left": "1rem" });
   $(".cv .cloud").css({ "margin-right": "1rem" });
+  $(".footer form .send").css({ "text-align": "center" });
 
   document.querySelector("style").textContent +=
     "@media screen and (min-width:1440px) { nav ul { direction: rtl; }}";
@@ -222,7 +222,6 @@ function englishLang() {
   $("#team_cv_drop_dircation").text(language.team_cv_drop_dircation);
   $("#footer_input_name").attr("placeholder", language.footer_input_name);
   $("#footer_input_Email1").attr("placeholder", language.footer_input_Email1);
-  $("#footer_input_send").attr("placeholder", language.footer_input_send);
   $("#footer_input_message").attr("placeholder", language.footer_input_message);
   $("#footer_input_Phone").attr("placeholder", language.footer_input_Phone);
   $("#footer_input_send").attr("value", language.footer_input_send);
@@ -256,6 +255,7 @@ function englishLang() {
   $(".navbar-brand").css({ float: "left", "text-align": "center" });
   $(".checkbtn").css({ float: "right" });
   $("nav ul").css({ float: "right"});
+  $(".footer form .send").css({ "text-align": "center" });
 
   document.querySelector("style").textContent +=
     "@media screen and (min-width:1440px) { nav ul { direction: ltr; }}";
