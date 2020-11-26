@@ -432,6 +432,7 @@ a {
   height: 100vh;
   background: url('../img/background.png');
   padding-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .Partners .porta {
@@ -1285,7 +1286,7 @@ a {
   }
 
   .inon video {
-    margin-top: 20rem;
+    margin-top: 22.5rem;
   }
 }
 

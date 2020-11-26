@@ -32,7 +32,7 @@
   height: 45%;
   box-sizing: border-box;
   margin-left: 25%;
-  max-width: 45%;
+  max-width: 53%;
   background-color: transparent;
   position: absolute;
   top: 60vh;
@@ -274,6 +274,7 @@
   .swiper-slide .person {
     height: 40vh;
     width: auto;
+    margin-top: 0rem;
   }
 
   .pepole h1 {
@@ -292,6 +293,7 @@
     margin-left: 1rem;
     font-size: 9px;
     line-height: 1.7;
+    width: 100%;
   }
 
   .pepole ul {
