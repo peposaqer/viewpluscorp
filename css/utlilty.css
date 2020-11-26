@@ -165,7 +165,7 @@ nav .x-mark {
     background-image: url('../img/footer-bg.png');
     color: #FFF;
     padding-top: 5rem;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
